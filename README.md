@@ -23,5 +23,7 @@
 
 ### Tools for visulization 
 [New app gene.iobio](http://bib.oxfordjournals.org/content/14/6/671.full)  
-[App here](http://gene.iobio.io/?rel0=proband&rel1=mother&rel2=father)  
-I will definetely have it a try.
+[App here](http://gene.iobio.io/?rel0=proband&rel1=mother&rel2=father) I will definetely have it a try.
+
+### Tools for vcf files
+[tools for pedigree files](https://github.com/brentp/peddy). It can determine sex from PED and VCF files. Developed by Brent Pedersen. I really like tools from Aaron Quinlan's lab.
