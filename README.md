@@ -10,3 +10,18 @@
    1/1 is deletion of one chromosome and duplication of the mutated chromosome". Quote from Siyuan Zheng.
 
 3. "Mutect analysis on the TCGA samples finds around 5000 ~ 8000 SNVs per sample." Quote from Siyuan Zheng. 
+
+
+### Mutation caller, structural variant caller
+
+**A series of posts from Brad Chapman**
+[Validating multiple cancer variant callers and prioritization in tumor-only samples](http://bcb.io/2015/03/05/cancerval/)  
+[Benchmarking variation and RNA-seq analyses on Amazon Web Services with Docker](http://bcb.io/2014/12/19/awsbench/)  
+[Validating generalized incremental joint variant calling with GATK HaplotypeCaller, FreeBayes, Platypus and samtools](Validating generalized incremental joint variant calling with GATK HaplotypeCaller, FreeBayes, Platypus and samtools)  
+[Validated whole genome structural variation detection using multiple callers](Validated whole genome structural variation detection using multiple callers)  
+
+
+### Tools for visulization 
+[New app gene.iobio](http://bib.oxfordjournals.org/content/14/6/671.full)  
+[App here](http://gene.iobio.io/?rel0=proband&rel1=mother&rel2=father)  
+I will definetely have it a try.
