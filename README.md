@@ -14,7 +14,8 @@
 
 ### Mutation caller, structural variant caller
 
-**A series of posts from Brad Chapman**
+**A series of posts from Brad Chapman**  
+
 1. [Validating multiple cancer variant callers and prioritization in tumor-only samples](http://bcb.io/2015/03/05/cancerval/)  
 2. [Benchmarking variation and RNA-seq analyses on Amazon Web Services with Docker](http://bcb.io/2014/12/19/awsbench/)  
 3. [Validating generalized incremental joint variant calling with GATK HaplotypeCaller, FreeBayes, Platypus and samtools](Validating generalized incremental joint variant calling with GATK HaplotypeCaller, FreeBayes, Platypus and samtools)  
