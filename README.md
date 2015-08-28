@@ -15,15 +15,15 @@
 ### Mutation caller, structural variant caller
 
 **A series of posts from Brad Chapman**
-[Validating multiple cancer variant callers and prioritization in tumor-only samples](http://bcb.io/2015/03/05/cancerval/)  
-[Benchmarking variation and RNA-seq analyses on Amazon Web Services with Docker](http://bcb.io/2014/12/19/awsbench/)  
-[Validating generalized incremental joint variant calling with GATK HaplotypeCaller, FreeBayes, Platypus and samtools](Validating generalized incremental joint variant calling with GATK HaplotypeCaller, FreeBayes, Platypus and samtools)  
-[Validated whole genome structural variation detection using multiple callers](Validated whole genome structural variation detection using multiple callers)  
+1. [Validating multiple cancer variant callers and prioritization in tumor-only samples](http://bcb.io/2015/03/05/cancerval/)  
+2. [Benchmarking variation and RNA-seq analyses on Amazon Web Services with Docker](http://bcb.io/2014/12/19/awsbench/)  
+3. [Validating generalized incremental joint variant calling with GATK HaplotypeCaller, FreeBayes, Platypus and samtools](Validating generalized incremental joint variant calling with GATK HaplotypeCaller, FreeBayes, Platypus and samtools)  
+4. [Validated whole genome structural variation detection using multiple callers](Validated whole genome structural variation detection using multiple callers)  
 
 
 ### Tools for visulization 
-[New app gene.iobio](http://bib.oxfordjournals.org/content/14/6/671.full)  
+1. [New app gene.iobio](http://bib.oxfordjournals.org/content/14/6/671.full)  
 [App here](http://gene.iobio.io/?rel0=proband&rel1=mother&rel2=father) I will definetely have it a try.
 
 ### Tools for vcf files
-[tools for pedigree files](https://github.com/brentp/peddy). It can determine sex from PED and VCF files. Developed by Brent Pedersen. I really like tools from Aaron Quinlan's lab.
+1. [tools for pedigree files](https://github.com/brentp/peddy). It can determine sex from PED and VCF files. Developed by Brent Pedersen. I really like tools from Aaron Quinlan's lab.
