@@ -22,6 +22,10 @@
 4. [Validated whole genome structural variation detection using multiple callers](Validated whole genome structural variation detection using multiple callers)  
 
 
+### Copy number variants 
+* [Interactive analysis and assessment of single-cell copy-number variations](http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.3578.html): [Ginkgo](http://qb.cshl.edu/ginkgo)   
+* 
+
 ### Tools for visulization 
 1. [New app gene.iobio](http://bib.oxfordjournals.org/content/14/6/671.full)  
 [App here](http://gene.iobio.io/?rel0=proband&rel1=mother&rel2=father) I will definetely have it a try.
