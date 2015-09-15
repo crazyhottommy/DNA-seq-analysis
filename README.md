@@ -1,5 +1,11 @@
 # DNA-seq
 
+### Databases for variants
+* [Disease Variant Store](https://rvs.u.hpc.mssm.edu/divas/)
+* 
+
+
+
 ### Tips and lessons learned during my DNA-seq data analysis journey.  
 
 1. [Allel frequency](https://en.wikipedia.org/wiki/Allele_frequency)  
