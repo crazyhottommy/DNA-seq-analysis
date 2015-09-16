@@ -20,6 +20,8 @@
 
 ### Mutation caller, structural variant caller
 
+* paper [Making the difference: integrating structural variation detection tools](http://bib.oxfordjournals.org/content/16/5/852.short?rss=1&utm_source=twitterfeed&utm_medium=twitter)
+
 **A series of posts from Brad Chapman**  
 
 1. [Validating multiple cancer variant callers and prioritization in tumor-only samples](http://bcb.io/2015/03/05/cancerval/)  
