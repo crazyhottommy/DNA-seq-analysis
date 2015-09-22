@@ -25,7 +25,7 @@ But the point is that **you need to shuffle the reads in the bam file**.
 from [Hengli](https://github.com/samtools/htslib/issues/26), the author of samtools and bwa:  
 >The right way to create paired fastq for bwa is:  
 `htscmd bamshuf -uO in.bam tmp-prefix | htscmd bam2fq -as se.fq.gz - | bwa mem -p ref.fa -`
-**If your bam is coordinate sorted, it is important to use "bamshuf" to change the ordering; otherwise bwa will fail to infer >insert size for a batch of reads coming from centromeres.**
+**If your bam is coordinate sorted, it is important to use "bamshuf" to change the ordering; otherwise bwa will fail to infer insert size for a batch of reads coming from centromeres.**
 
 BWA `-p` flag
 >"If mates.fq file is absent and option -p is not set, this command regards input reads are single-end. If mates.fq is present, this command assumes the i-th read in reads.fq and the i-th read in mates.fq constitute a read pair. If -p is used, the command assumes the 2i-th and the (2i+1)-th read in reads.fq constitute a read pair (such input file is said to be interleaved). In this case, mates.fq is ignored. In the paired-end mode, the mem command will infer the read orientation and >the insert size distribution from a batch of reads.
