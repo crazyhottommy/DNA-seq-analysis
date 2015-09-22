@@ -19,8 +19,8 @@ Read this [(howto) Revert a BAM file to FastQ format](http://gatkforums.broadins
 Action
 Shuffle the reads in the bam file so they are not in a biased order before alignment by running the following HTSlib command:
 
-`htscmd bamshuf -uOn 128 aln_reads.bam tmp > shuffled_reads.bam` 
-Expected Result
+`htscmd bamshuf -uOn 128 aln_reads.bam tmp > shuffled_reads.bam`   
+Expected Result  
 This creates a new BAM file containing the original reads, which still retain their mapping information, but now they are no longer sorted.
 
 The aligner uses blocks of paired reads to estimate the insert size. If you don’t shuffle your original bam, the blocks of insert size will not be randomly distributed across the genome, rather they will all come from the same region, biasing the insert size calculation. This is a very important step which is unfortunately often overlooked.
@@ -28,8 +28,8 @@ The aligner uses blocks of paired reads to estimate the insert size. If you don�
 ####Revert the BAM file to FastQ
 
 Revert the BAM file to FastQ format by running the following HTSlib command:  
-`htscmd bam2fq -a shuffled_reads.bam > interleaved_reads.fq` 
-Expected Result
+`htscmd bam2fq -a shuffled_reads.bam > interleaved_reads.fq`   
+Expected Result  
 This creates an interleaved FastQ file called interleaved_reads.fq containing the now-unmapped paired reads.
 
 **Interleaved simply means that for each pair of reads in your paired-end data set, both the forward and the reverse reads are in the same file, as opposed to having them in separate files.**
@@ -39,8 +39,8 @@ This creates an interleaved FastQ file called interleaved_reads.fq containing th
 Action
 Compress the FastQ file to reduce its size using the gzip utility:
 
-`gzip interleaved_reads.fq`
-Expected Result
+`gzip interleaved_reads.fq`  
+Expected Result  
 This creates a gzipped FastQ file called interleaved_reads.fq.gz. This file is ready to be used as input for the Best Practices workflow.
 
 BWA handles gzipped fastq files natively, so you don’t need to unzip the file to use it later on.
