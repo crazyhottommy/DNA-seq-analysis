@@ -16,6 +16,8 @@
    1/1 is deletion of one chromosome and duplication of the mutated chromosome". Quote from Siyuan Zheng.
 
 3. "Mutect analysis on the TCGA samples finds around 5000 ~ 8000 SNVs per sample." Quote from Siyuan Zheng. 
+4. Cell lines might be contamintated or mislabled. [The Great Big Clean-Up](http://mobile.the-scientist.com/article/43821/the-great-big-clean-up)  
+5. Tumor samples are not pure, you will always have stromal cells and infiltrating immnue cells in the tumor bulk. When you analyze the data, keep this in mind.
 
 
 ### Mutation caller, structural variant caller
