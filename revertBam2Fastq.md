@@ -104,4 +104,21 @@ optional arguments:
                         Write BAM header to file
 ```
 
+Further reading:  
+[questions about bam files](http://gatkforums.broadinstitute.org/discussion/1317/collected-faqs-about-bam-files)  
+[http://gatkforums.broadinstitute.org/discussion/1317/collected-faqs-about-bam-files](http://gatkforums.broadinstitute.org/discussion/4805/how-to-use-bwa-mem-for-paired-end-illumina-reads)  
 
+Check read group in the bam file
+```bash
+$ samtools view /path/to/my.bam | grep '^@RG'
+EAS139_44:2:61:681:18781    35  1   1   0   51M =   9   59  TAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAA B<>;==?=?<==?=?=>>?>><=<?=?8<=?>?<:=?>?<==?=>:;<?:= RG:Z:4  MF:i:18 Aq:i:0  NM:i:0  UQ:i:0  H0:i:85 H1:i:31
+EAS139_44:7:84:1300:7601    35  1   1   0   51M =   12  62  TAACCCTAAGCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAA G<>;==?=?&=>?=?<==?>?<>>?=?<==?>?<==?>?1==@>?;<=><; RG:Z:3  MF:i:18 Aq:i:0  NM:i:1  UQ:i:5  H0:i:0  H1:i:85
+EAS139_44:8:59:118:13881    35  1   1   0   51M =   2   52  TAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAA @<>;<=?=?==>?>?<==?=><=>?-?;=>?:><==?7?;<>?5?<<=>:; RG:Z:1  MF:i:18 Aq:i:0  NM:i:0  UQ:i:0  H0:i:85 H1:i:31
+EAS139_46:3:75:1326:2391    35  1   1   0   51M =   12  62  TAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCCTAA @<>==>?>@???B>A>?>A?A>??A?@>?@A?@;??A>@7>?>>@:>=@;@ RG:Z:0  MF:i:18 Aq:i:0  NM:i:0  UQ:i:0  H0:i:85 H1:i:31
+...
+
+```
+
+**when align using bwa mem, one can add the read group info by**:  
+
+`bwa mem -R "@RG\tID:foo\tSM:bar"`
