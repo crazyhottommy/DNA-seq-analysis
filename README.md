@@ -31,6 +31,7 @@
 2. [Benchmarking variation and RNA-seq analyses on Amazon Web Services with Docker](http://bcb.io/2014/12/19/awsbench/)  
 3. [Validating generalized incremental joint variant calling with GATK HaplotypeCaller, FreeBayes, Platypus and samtools](Validating generalized incremental joint variant calling with GATK HaplotypeCaller, FreeBayes, Platypus and samtools)  
 4. [Validated whole genome structural variation detection using multiple callers](Validated whole genome structural variation detection using multiple callers)  
+5. [Validated variant calling with human genome build 38](http://bcb.io/2015/09/17/hg38-validation/)
 
 
 ### Copy number variants 
