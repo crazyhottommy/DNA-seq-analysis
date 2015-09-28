@@ -92,3 +92,5 @@ EAS139_46:3:75:1326:2391    35  1   1   0   51M =   12  62  TAACCCTAACCCTAACCCTA
 `bwa mem -R "@RG\tID:foo\tSM:bar"`
 
 #### some bam files contain reads from different read groups. one needs to convert the bam to different fastqs for each read group respectively and then realign each with bwa mem. Lastly, merge all the sorted bam together to get a realigned bam.
+
+#### Check out HengLi's [bwakit](https://github.com/lh3/bwa/tree/master/bwakit)
