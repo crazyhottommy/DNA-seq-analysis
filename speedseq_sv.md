@@ -11,6 +11,7 @@ From Colby Chiang:
 
 
 ### For SNVs
+From Colby Chiang:  
 >The filtering criteria we used in the paper is specified in the methods. Basically SSC is the proper tuning parameter. the default, which is what we used in the paper was 18  
 
 Testing from Siyuan Zheng:
