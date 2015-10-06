@@ -1,4 +1,4 @@
-### Notes and tips for speedseq structural variants calling
+## Notes and tips for speedseq structural variants calling
 
 ### For Structural variants
 From Colby Chiang:
