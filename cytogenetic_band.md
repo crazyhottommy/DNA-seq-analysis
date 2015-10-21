@@ -13,3 +13,24 @@ The ends of the chromosomes are labeled ptel and qtel. For example, the notation
 
 ![](https://cloud.githubusercontent.com/assets/4106146/10648688/7db14d06-7805-11e5-91c0-bbbc16fb1136.gif)
 
+#### How to get the cooridnates of the cytobands?
+
+You can find it in the [UCSC database](http://hgdownload.cse.ucsc.edu/goldenPath/hg19/database/cytoBand.txt.gz):  
+`wget http://hgdownload.cse.ucsc.edu/goldenPath/hg19/database/cytoBand.txt.gz | gunzip `
+
+```
+head cytoBand.txt  
+chr1	0	2300000	p36.33	gneg
+chr1	2300000	5400000	p36.32	gpos25
+chr1	5400000	7200000	p36.31	gneg
+chr1	7200000	9200000	p36.23	gpos25
+chr1	9200000	12700000	p36.22	gneg
+chr1	12700000	16200000	p36.21	gpos50
+chr1	16200000	20400000	p36.13	gneg
+chr1	20400000	23900000	p36.12	gpos25
+chr1	23900000	28000000	p36.11	gneg
+chr1	28000000	30200000	p35.3	gpos25
+```
+If you have a list of genes with cooridnates and want to see which band each gene reside in, you can use bedtools or bioconductor GRanges package to find out.
+
+
