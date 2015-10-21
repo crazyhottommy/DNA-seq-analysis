@@ -2,6 +2,7 @@
 ### This is a review of the basic concept of cytoband in molecular/cell biology.
 
 See the original [link](http://www.ncbi.nlm.nih.gov/Class/MLACourse/Modules/Genomes/map_cytogenetic_bands.html) 
+by **Strachan, T. and Read, A.P. 1999. Human Molecular Genetics, 2nd ed. New York: John Wiley & Sons.**
 
 >Each human chromosome has a short arm ("p" for "petit") and long arm ("q" for "queue"), separated by a centromere. The ends of the chromosome are called telomeres.
 
