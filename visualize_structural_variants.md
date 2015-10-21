@@ -1,3 +1,11 @@
+
+### Visualize Structural variants
+
+Read several biostars posts:  
+[Best Genome Browser To Look At Structural Variation Calls](https://www.biostars.org/p/52014/)  
+[Which Multiscale Genome Browser Is The Best At Visualizing Structural Variants?](https://www.biostars.org/p/19455/)
+
+
 ### Use [svviz](https://github.com/svviz/svviz)
 
 For some background on ssh tunnelling:  
