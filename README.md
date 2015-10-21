@@ -44,3 +44,10 @@
 
 ### Tools for vcf files
 1. [tools for pedigree files](https://github.com/brentp/peddy). It can determine sex from PED and VCF files. Developed by Brent Pedersen. I really like tools from Aaron Quinlan's lab.
+2. [cyvcf2](https://github.com/brentp/cyvcf2) is a cython wrapper around htslib built for fast parsing of Variant Call Format (VCF) files
+3. [PyVCF](http://pyvcf.readthedocs.org/en/latest/) - A Variant Call Format Parser for Python
+
+### Annotate vcf files
+1. Variant Effect Predictor: [VEP](http://useast.ensembl.org/info/docs/tools/vep/index.html)
+2. [SNPEFF](http://snpeff.sourceforge.net/)
+3. [vcfanno](https://github.com/brentp/vcfanno)
