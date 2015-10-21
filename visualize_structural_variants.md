@@ -13,15 +13,14 @@ In HPC nautilus:
 #### insertion
 `svviz -p 7777 -t ins -b my.bam Homo_sapiens_assembly19.fasta 3 2516030 2516054`
 
-start an ssh tunnel to the server on my own computer:  
-`ssh -L 127.0.0.1:7777:127.0.0.1:7777 mtang1@nautilus -N`
-
-open `127.0.0.1:7777` on my local computer.
-
 ####translocation
 
 `svviz -p 7777 -t tra -b my.bam Homo_sapiens_assembly19.fasta 7  50996890  9  106346679 +`
 
+**start an ssh tunnel to the server on my own computer:**  
+`ssh -L 127.0.0.1:7777:127.0.0.1:7777 username@nautilus -N`
+
+open `127.0.0.1:7777` on my local computer.
 
 ### Use [pybamview](http://melissagymrek.com/pybamview/)	
 
