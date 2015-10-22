@@ -33,4 +33,7 @@ chr1	28000000	30200000	p35.3	gpos25
 ```
 If you have a list of genes with cooridnates and want to see which band each gene reside in, you can use bedtools or bioconductor GRanges package to find out.
 
+Someone has written scripts for this kind of task as well.  see [here](https://github.com/lelimat/bioinfo/blob/master/region_to_cytoband.sh)
+
+
 
