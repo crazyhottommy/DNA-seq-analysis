@@ -14,5 +14,5 @@ see posts:
 >Aaron
 
 tools I am now looking at:
-[mergeVcf](https://github.com/ljdursi/mergevcf)
+[mergeVcf](https://github.com/ljdursi/mergevcf)  
 [lumpy-merge](https://github.com/hall-lab/lumpy-merge)
