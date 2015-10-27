@@ -2,18 +2,14 @@
 
 ### For Structural variants
 From Colby Chiang:
-> QUAL score is usually best to filter sv from speedseq if you've run SVTyper (they are using QUAL >10 to filter). SU >=3 (supporting reads) if you have not. 
+> QUAL score is usually best to filter sv from speedseq if you've run SVTyper. SU >=3 (supporting reads) if you have not. 
 [vawk](https://github.com/cc2qe/vawk) is helpful.
+> we've been using QUAL>10 lately but we haven't profiled it's behavior on that many data sets yet
+
 
 **when filtering SV calls, one needs to take account of sequencing depth, tumor purity etc.**
 
 The deeper the sequencing is, the more SV calls. we usually use supporting reads to filter the SV call. Say >= 4 supporting reads. However, if your tumor sample is not pure, even you sequence into the same depth as other samples, you may relax this cut-off to 2?
-
-
-> we've been using QUAL>10 lately but we haven't profiled it's behavior on that many data sets yet
-
-
-
 
 ### For SNVs
 From Colby Chiang:  
