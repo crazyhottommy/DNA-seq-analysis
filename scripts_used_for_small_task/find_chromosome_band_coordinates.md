@@ -99,6 +99,7 @@ for arm_list in genome_list:
 ofile.close()
 
 ```
+Let's look at the results.  
 
 ```bash
 $ head chrom_arm_list.txt 
@@ -166,4 +167,5 @@ You can sort by chr and start:
 
 `V` is only for GNU sort which will [sort chromsome in alpha-numeric order](http://crazyhottommy.blogspot.com/2013/09/amazing-gnu-sort.html)
 
-
+If I compare the two results from different ways, they are identical: 
+` cmp <(sort -k1,1V -k2,2n chrom_arm_dict.txt) <(sort -k1,1V -k2,2n chrom_arm_list.txt)`
