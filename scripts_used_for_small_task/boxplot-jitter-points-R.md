@@ -1,4 +1,4 @@
-### Make a box-plot with jittered points 
+### Make a box-plot with jittered points for multiple groups using ggplot2
 
 Let me demonstrate it with an example. Use the `ToothGrowth` data set in the `ggplot2` library  
 
