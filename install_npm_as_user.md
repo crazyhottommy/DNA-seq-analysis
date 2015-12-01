@@ -44,3 +44,15 @@ Otherwise, do this...
 ...and add that line to your `$HOME/.profile` file, so it'll run every time you log in.
 
 (Note: Unixes are adopting on $HOME/.local as the standard per-user program/library location, but they're not all there yet.)
+
+Install pybamview:  
+
+```bash
+pip install --user pybamview
+```
+
+```bash
+npm install npm --global
+npm install d3 --global
+npm install jsdom --global
+```
