@@ -15,5 +15,5 @@ see posts:
 
 tools I am now looking at:  
 [mergeVcf](https://github.com/ljdursi/mergevcf)  
-[lumpy-merge](https://github.com/hall-lab/lumpy-merge)
+[lumpy-merge](https://github.com/hall-lab/lumpy-merge)  
 [svtools](https://github.com/hall-lab/svtools). migrating the `lumpy-merge` to `svtools`, still under active development.
