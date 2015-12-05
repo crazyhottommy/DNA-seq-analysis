@@ -6,6 +6,25 @@ From Colby Chiang:
 [vawk](https://github.com/cc2qe/vawk) is helpful.
 > we've been using QUAL>10 lately but we haven't profiled it's behavior on that many data sets yet
 
+### filtering rules 
+See a [post](http://bcb.io/2014/08/12/validated-whole-genome-structural-variation-detection-using-multiple-callers/) by Brad Chapman  and his anwswers to my questions at the comments part.  
+
+> **4 supporting reads is total read evidence (either split reads or paired reads)**
+
+Two more questions. when filtering somatic SVs, I require normal genotype to be 0/0 and tumor genotype to be 0/1 or 1/1 and 0 supporting reads for normal, 4 supporting reads for tumor. Do you think 0 is too stringent? pybamview is good for visualizing deletions, but for translocations, it does not color the discordant read pairs like IGV does (correct me if I am wrong). What's your solution? Thanks! I am learning how to analyze svs by myself...and I appreciate your suggestions.
+
+>That sounds like a reasonable approach for somatic-only SVs. In bcbio we require 4 support reads of evidence and different tumor/normal genotypes as you suggest (0/0 -> 0/1 or 1/1) and don't look specifically at background reads. I don't think that's a bad idea but don't know how much it adds for the extra effort. For visualization, I use IGV or [svviz](https://github.com/svviz/svviz) which has some nice features for handling more complex cases.  
+
+I just found out that Wham tool filters against low complexity regions http://zeeev.github.io/wham/
+
+download the low complexity region (LCR) [here: LCR-hs37d5.bed](https://github.com/zeeev/wham/blob/master/data/LCR-hs37d5.bed)
+filter calls overlapping the LCR regions:  
+
+```
+pairToBed -type neither  -a NA12878.lumpy.s.bedpe -b LCR-hs37d5.bed
+
+```
+
 
 **when filtering SV calls, one needs to take account of sequencing depth, tumor purity etc.**
 
