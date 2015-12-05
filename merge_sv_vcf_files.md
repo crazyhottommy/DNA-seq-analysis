@@ -16,4 +16,5 @@ see posts:
 tools I am now looking at:  
 [mergeVcf](https://github.com/ljdursi/mergevcf)  
 [lumpy-merge](https://github.com/hall-lab/lumpy-merge)  
-[svtools](https://github.com/hall-lab/svtools). migrating the `lumpy-merge` to `svtools`, still under active development.
+[svtools](https://github.com/hall-lab/svtools). migrating the `lumpy-merge` to `svtools`, still under active development.  
+[mergeSVcallers](https://github.com/zeeev/mergeSVcallers) from Zev who also developed [Wham](https://github.com/zeeev/wham), a new SV caller.
