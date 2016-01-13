@@ -32,8 +32,8 @@
 
 1. [Validating multiple cancer variant callers and prioritization in tumor-only samples](http://bcb.io/2015/03/05/cancerval/)  
 2. [Benchmarking variation and RNA-seq analyses on Amazon Web Services with Docker](http://bcb.io/2014/12/19/awsbench/)  
-3. [Validating generalized incremental joint variant calling with GATK HaplotypeCaller, FreeBayes, Platypus and samtools](Validating generalized incremental joint variant calling with GATK HaplotypeCaller, FreeBayes, Platypus and samtools)  
-4. [Validated whole genome structural variation detection using multiple callers](Validated whole genome structural variation detection using multiple callers)  
+3. [Validating generalized incremental joint variant calling with GATK HaplotypeCaller, FreeBayes, Platypus and samtools](http://bcb.io/2014/10/07/joint-calling/)  
+4. [Validated whole genome structural variation detection using multiple callers](http://bcb.io/2014/08/12/validated-whole-genome-structural-variation-detection-using-multiple-callers/)  
 5. [Validated variant calling with human genome build 38](http://bcb.io/2015/09/17/hg38-validation/)
 
 
