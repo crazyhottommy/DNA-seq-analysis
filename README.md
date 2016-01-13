@@ -27,6 +27,7 @@
 * [lumpy](https://github.com/arq5x/lumpy-sv)
 * [wham](https://github.com/zeeev/wham)
 * [SV-Bay](https://github.com/InstitutCurie/SV-Bay )  
+* [Delly](https://github.com/tobiasrausch/delly)
 
 **A series of posts from Brad Chapman**  
 
