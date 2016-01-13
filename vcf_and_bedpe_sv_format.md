@@ -110,6 +110,6 @@ Ming
 
 >So, + means the region is at the 5' of the breakpoint and - means the region is at the 3' of the breakpoint.
 
-Please also check the figure from [Structural variation discovery in the cancer genome using next generation sequencing: Computational solutions and perspectives](http://www.impactjournals.com/oncotarget/index.php?journal=oncotarget&page=article&op=view&path%5B%5D=3491)
+### Please also check the figure from [Structural variation discovery in the cancer genome using next generation sequencing: Computational solutions and perspectives](http://www.impactjournals.com/oncotarget/index.php?journal=oncotarget&page=article&op=view&path%5B%5D=3491)
 
 ![screenshot 2016-01-08 16 17 35](https://cloud.githubusercontent.com/assets/4106146/12210993/a86a52ca-b623-11e5-8f27-d5fa3b215f6e.png)
