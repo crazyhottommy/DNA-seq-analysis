@@ -59,3 +59,9 @@ for example:
 
 ### or use X window forwarding
 `ssh -Y hostname`
+
+
+### Use `maze` from delly developer
+
+see [github page](https://github.com/tobiasrausch/delly/tree/master/vis/maze/)
+I will investigate a bit on it.
