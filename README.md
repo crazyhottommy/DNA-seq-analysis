@@ -63,3 +63,9 @@
 ### Plotting
 1.[oncoprint](https://bioconductor.org/packages/release/bioc/vignettes/ComplexHeatmap/inst/doc/s8.oncoprint.html)
 
+### Tumor purity
+* ESTIMATE
+* ABSOLUTE
+* THetA
+* [Reference-free deconvolution of DNA methylation data and mediation by cell composition effects](http://biorxiv.org/content/early/2016/01/22/037671)
+
