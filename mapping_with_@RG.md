@@ -5,7 +5,7 @@ for bowtie1
 ```bash
 Example:
 --sam-RG ID:HWI-SN957Lane7 --sam-RG SM:ZEN456A1 --sam-RG LB:ZEN456A1LI5 --sam-RG PI:400 --sam-RG PL:ILLUMINA
-``
+```
 
 for bowtie2
 
