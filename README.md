@@ -80,6 +80,10 @@ credit from Vince Buffalo.
 * [paper: The prognostic landscape of genes and infiltrating immune cells across human cancers](http://www.ncbi.nlm.nih.gov/pubmed/26193342)  from Alizadeh lab.
 * [Robust enumeration of cell subsets from tissue expression profiles](http://www.nature.com/nmeth/journal/v12/n5/abs/nmeth.3337.html)  from Alizadeh lab, and the [CIBERSORT tool](https://cibersort.stanford.edu/index.php)  
 
+### mutual exclusiveness of mutations
+* [MEGSA](http://biorxiv.org/content/early/2015/04/09/017731): A powerful and flexible framework for analyzing mutual exclusivity of tumor mutations.
+* [CoMet](https://github.com/raphael-group/comet)  
+
 ### Non-coding mutations
 * [Large-scale Analysis of Variants in noncoding Annotations](http://larva.gersteinlab.org/)
 
