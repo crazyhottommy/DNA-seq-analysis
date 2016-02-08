@@ -35,6 +35,7 @@ credit from Vince Buffalo.
 * [wham](https://github.com/zeeev/wham)
 * [SV-Bay](https://github.com/InstitutCurie/SV-Bay )  
 * [Delly](https://github.com/tobiasrausch/delly)
+* [COSMOS](http://seselab.org/cosmos/): Somatic Large Structural Variation Detector
 * Fusion And Chromosomal Translocation Enumeration and Recovery Algorithm [(FACTERA)](https://factera.stanford.edu/)  
 
 **A series of posts from Brad Chapman**  
