@@ -17,4 +17,6 @@ tools I am now looking at:
 [mergeVcf](https://github.com/ljdursi/mergevcf). [A post on it](http://simpsonlab.github.io/2015/06/15/merging-sv-calls/)  
 [lumpy-merge](https://github.com/hall-lab/lumpy-merge)  
 [svtools](https://github.com/hall-lab/svtools). migrating the `lumpy-merge` to `svtools`, still under active development.  
+see a [workflow](https://github.com/hall-lab/svtools/blob/master/svtools_demo.sh) using svtools.  
+
 [mergeSVcallers](https://github.com/zeeev/mergeSVcallers) from Zev who also developed [Wham](https://github.com/zeeev/wham), a new SV caller. merging for translocations are not implemented yet, but in the plan of Zev.
