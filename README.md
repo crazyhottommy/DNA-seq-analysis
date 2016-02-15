@@ -22,6 +22,7 @@
 ![](https://camo.githubusercontent.com/3937606a47ad455b9bf2ba9bfca9e91f5afbb3a8/68747470733a2f2f692e696d6775722e636f6d2f337449445574442e706e67)
 
 credit from Vince Buffalo.
+Also, read this [post](https://standage.github.io/on-genomic-interval-notation.html) and this [post](https://www.biostars.org/p/84686/)  
 
 
 ### Mutation caller, structural variant caller
