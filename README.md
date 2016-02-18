@@ -61,7 +61,7 @@ Also, read this [post](https://standage.github.io/on-genomic-interval-notation.h
 2. [cyvcf2](https://github.com/brentp/cyvcf2) is a cython wrapper around htslib built for fast parsing of Variant Call Format (VCF) files
 3. [PyVCF](http://pyvcf.readthedocs.org/en/latest/) - A Variant Call Format Parser for Python
 
-### Annotate variants
+### Annotate and explore variants 
 1. Variant Effect Predictor: [VEP](http://useast.ensembl.org/info/docs/tools/vep/index.html)
 2. [SNPEFF](http://snpeff.sourceforge.net/)
 3. [vcfanno](https://github.com/brentp/vcfanno)
@@ -69,6 +69,7 @@ Also, read this [post](https://standage.github.io/on-genomic-interval-notation.h
 5. [FunSeq2](http://funseq2.gersteinlab.org/)- A flexible framework to prioritize regulatory mutations from cancer genome sequencing
 6. [ClinVar](https://github.com/macarthur-lab/clinvar)  
 7. [ExAC](http://exac.broadinstitute.org/)
+8. [vcf2db](https://github.com/quinlan-lab/vcf2db) and [GEMINI](https://gemini.readthedocs.org/en/latest/index.html): a flexible framework for exploring genome variation from Qunlan lab.
 
 ### Plotting
 1.[oncoprint](https://bioconductor.org/packages/release/bioc/vignettes/ComplexHeatmap/inst/doc/s8.oncoprint.html)
