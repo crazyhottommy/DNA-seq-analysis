@@ -36,7 +36,555 @@ The BEDPE contains one SV per line with the following tab-delimited columns:
 
 12. info - extra information about the SV or a single period (.)
 
-### Bedpe converted from vcf4.2 by [svtools](https://github.com/hall-lab/svtools/issues/5#issuecomment-161432757)
+
+
+### Make sure you read this: [SV representations in BEDPE format](https://gist.github.com/ernfrid/e6af5c7a56758aaf3fbb)
+
+I just copied from [Dave Larson](https://gist.github.com/ernfrid). credit goes to him!
+There is a hot discussion on this at the [svtools issues](https://github.com/hall-lab/svtools/issues/49)
+
+
+# Background
+BEDPE coordinates refer to a genomic position, but it is unclear to me what position (relative to an SV) they are intended to convey. This is illustrated in the case where we know precisely where the breakpoints are.
+
+# Potential Reporting Conventions
+1. Affected Bases (AFF)
+2. Left of the breakpoint (LOB)
+3. Right of the breakpoint (ROB)
+4. Exact breakpoint (BPT)
+5. Last-aligned Base (LAB)
+
+# Events to support
+1. Simple Deletions
+2. Simple Insertions
+3. Range Math on coordinates
+4. Balanced Translocations/Inversion
+5. Telomeric Deletions
+6. Unbalanced Translocations/Inversions
+7. Telomeric Insertions
+
+# Simple Deletions
+
+## Alignment for fictional 5bp DEL
+We will call the chromosome below 'chr'.
+
+Plain alignment:
+```
+REF ACGTGCC
+ALT A-----C
+```
+
+With 0-based coordinates (BED):
+```
+    0123456
+REF ACGTGCC
+ALT A-----C
+```
+
+With 1-based coordinates (VCF):
+```
+    1234567
+REF ACGTGCC
+ALT A-----C
+```
+
+## VCF Entry as a precise SV 
+Assume chromosome name is 1
+```
+chr 1 . ACGTGC  A . PASS  SVTYPE=DEL;END=6
+```
+
+## VCF Entry as BND entries (again, precise)
+```
+chr 1 . A A[chr:7[  . PASS  SVTYPE=BND
+chr 7 . C ]chr:1]C  . PASS  SVTYPE=BND
+```
+
+## BEDPE Entry options
+### AFF
+The coordinates label the first and last deleted bases.
+```
+chr 1 2 chr 5 6
+```
+* Note that for range arithmetic, the length would be end2 - start1
+
+### LOB
+The coordinates label the base to the left of the breakpoint(s).
+```
+chr 0 1 chr 5 6
+```
+* Note that for range arithmetic, the length would be start2 - start1 or end2 - end1 but that start2 - end1 and end2 - start1 would not give the length.
+
+### ROB
+The coordinates label the base to the right of the breakpoint(s).
+```
+chr 1 2 chr 6 7
+```
+* Note that for range arithmetic, the length would be start2 - start1 or end2 - end1 but that start2 - end1 and end2 - start1 would not give the length.
+
+### BPT
+Coordinates are 0-length ranges specifying the position of the breakpoint.
+```
+chr 1 1 chr 6 6
+```
+* Note that for range arithmetic, the length is the same no matter which coordinates you use between the two coordinate sets.
+
+### LAB
+Coordinates specify the "last-aligned base" as in VCF
+```
+chr 0 1 chr 6 7
+```
+* Note that for range arithmetic, the length would be start2 - end1 or end2 - end1 - 1 or start2 - start1 -1.
+
+# Simple Insertions
+## Alignment for fictional 5bp INS
+We will call the chromosome below 'chr'.
+
+Plain alignment:
+```
+REF A-----C
+ALT ACGTGCC
+```
+
+With 0-based coordinates (BED):
+```
+    0123456
+REF A-----C
+ALT ACGTGCC
+```
+
+With 1-based coordinates (VCF):
+```
+    1234567
+REF A-----C
+ALT ACGTGCC
+```
+## VCF Entry as a precise SV 
+Assume chromosome name is chr
+```
+chr 1 . A  ACGTGC . PASS  SVTYPE=INS;END=1
+```
+
+## VCF Entry as BND entries (again, precise)
+```
+chr 1 . A ACGTGC[chr:2[  . PASS  SVTYPE=BND
+chr 2 . C ]chr:1]CGTGCC  . PASS  SVTYPE=BND
+```
+
+## BEDPE Entry options
+Note that range arithmetic would not apply to these cases as insertion size has no effect on the coordinates of the reference.
+
+### AFF
+This seems to make no sense. What base is the affected-based? You would have to fall back to either leftmost or rightmost base in this case. See those below.
+### LOB
+```
+chr 0   1 chr 0   1
+```
+### ROB
+```
+chr 1   2   chr 1   2
+```
+### BPT
+```
+chr 1   1   chr 1   1
+```
+### LAB
+```
+chr 0   1   chr 1   2
+```
+
+# Reciprocal Translocations/Inversions
+Will only consider inversions as those actually have some range math applications that may prove illustrative.
+
+## Alignment for fictional 5bp INV
+We will call the chromosome below 'chr'
+
+Plain alignment:
+```
+REF ATGTGCC
+ALT AGCACAC
+```
+
+With 0-based coordinates (BED):
+```
+    0123456
+REF ATGTGCC
+ALT AGCACAC
+```
+
+With 1-based coordinates (VCF):
+```
+    1234567
+REF ATGTGCC
+ALT AGCACAC
+```
+
+## VCF Entry as a precise SV
+```
+chr 1   .   ATGTGC   AGCACA   .   PASS    SVTYPE=INV;END=6
+```
+
+## VCF Entries as a BND. Includes ALL breakends
+```
+chr 1   .   A   A]chr:6]    .   PASS    SVTYPE=BND
+chr 2   .   T   [chr:7[T    .   PASS    SVTYPE=BND
+chr 6   .   C   C]chr:1]    .   PASS    SVTYPE=BND
+chr 7   .   C   [chr:2[C    .   PASS    SVTYPE=BND
+```
+
+## BEDPE Entry options
+
+### AFF
+```
+chr 1   2   chr 5   6
+```
+* Note for range arithmetic, the length would be end2 - start1 
+
+### LOB
+```
+chr 0   1   chr 5   6
+```
+* Note that for range operations, the length is end2 - end1. 
+
+### ROB
+```
+chr 1   2   chr 6   7
+```
+* Note that for range operations, the length is end2 - end1.
+
+### BPT
+```
+chr 1   1   chr 6   6
+```
+* Note that for the range arithmetic, the length is the same no matter which coordinates you use.
+
+### LAB
+```
+chr 0   1   chr 6   7
+```
+* Note that for the range arithmetic, the length end2 - start2 - 1.
+
+# Telomeric Deletion (Right)
+
+## Alignment for fictional telomeric DEL
+We will call the chromosome below 'chr'.
+
+Plain alignment:
+```
+REF ACGTGCC
+ALT A------
+```
+
+With 0-based coordinates (BED):
+```
+    0123456
+REF ACGTGCC
+ALT A------
+```
+
+With 1-based coordinates (VCF):
+```
+    1234567
+REF ACGTGCC
+ALT A------
+```
+
+## VCF Entry as a precise SV 
+Assume chromosome name is 1
+```
+chr 1 . A  <DEL> . PASS  SVTYPE=DEL;END=7
+```
+
+## VCF Entry as BND entries (again, precise)
+```
+chr 1 . A .[chr:8[  . PASS  SVTYPE=BND
+chr 8 . N ]chr:1].  . PASS  SVTYPE=BND
+```
+
+## BEDPE Entry options
+### AFF
+The coordinates label the first and last deleted bases.
+```
+chr 1 2 chr 6 7
+```
+* Note that for range arithmetic, the length would be end2 - start1
+
+### LOB
+The coordinates label the base to the left of the breakpoint(s).
+
+```
+chr 0 1 chr 6 7
+```
+* Note that for range arithmetic, the length would be end2 - end1
+
+### ROB
+The coordinates label the base to the right of the breakpoint(s). It would have to be allowed or hacked to go greater than the length of the reference for BED
+```
+chr 1 2 chr 7 8
+```
+* Note that for range arithmetic, the length would be start2 - start1 or end2 - end1 but that start2 - end1 and end2 - start1 would not give the length.
+
+### BPT
+Coordinates are 0-length ranges specifying the position of the breakpoint.
+```
+chr 1   1 chr 7   7
+```
+* Note that for range arithmetic, the length is the same no matter which coordinates you use between the two coordinate sets.
+
+### LAB
+Coordinates specify the "last-aligned base" as in VCF. This would also have to allow for virtual bases off the end of the reference
+```
+chr 0 1 chr 7 8
+```
+* Note that for range arithmetic, the length would be start2 - start1 - 1 or end2 - end1 -1.
+
+# Telomeric Deletion (Left)
+
+## Alignment for fictional telomeric DEL
+We will call the chromosome below 'chr'.
+
+Plain alignment:
+```
+REF ACGTGCC
+ALT ------C
+```
+
+With 0-based coordinates (BED):
+```
+    0123456
+REF ACGTGCC
+ALT ------C
+```
+
+With 1-based coordinates (VCF):
+```
+    1234567
+REF ACGTGCC
+ALT ------C
+```
+
+## VCF Entry as a precise SV 
+Assume chromosome name is 1
+```
+chr 0 . N  <DEL> . PASS  SVTYPE=DEL;END=6
+```
+
+## VCF Entry as BND entries (again, precise)
+```
+chr 0 . N .[chr:7[  . PASS  SVTYPE=BND
+chr 7 . C ]chr:0]C  . PASS  SVTYPE=BND
+```
+
+## BEDPE Entry options
+### AFF
+The coordinates label the first and last deleted bases.
+```
+chr 0 1 chr 5 6
+```
+* Note that for range arithmetic, the length would be end2 - start1
+
+### LOB
+The coordinates label the base to the left of the breakpoint(s). This breaks for this variant type.
+
+### ROB
+The coordinates label the base to the right of the breakpoint(s).
+```
+chr 0 1 chr 6 7
+```
+* Note that for range arithmetic, the length would be start2 - start1 or end2 - end1 but that start2 - end1 and end2 - start1 would not give the length.
+
+### BPT
+Coordinates are 0-length ranges specifying the position of the breakpoint.
+```
+chr 0 0 chr 6 6
+```
+* Note that for range arithmetic, the length is the same no matter which coordinates you use between the two coordinate sets.
+
+### LAB
+Coordinates specify the "last-aligned base" as in VCF. This breaks for the same reason as left-most base.
+
+# Unbalanced Translocation
+In VCF, these have to be explicitly labeled as a pair.
+
+## VCF Entry as BND entries (from VCF spec)
+```
+chr2 321681 bnd_W G G[chr13:123460[     .   PASS  SVTYPE=BND;PARID=bnd_V;MATEID=bnd_X
+chr2 321682 bnd_V T ]chr13:123456]T     .   PASS  SVTYPE=BND;PARID=bnd_W;MATEID=bnd_U
+chr13 123456 bnd_U C C[chr2:321682[     .   PASS  SVTYPE=BND;PARID=bnd_X;MATEID=bnd_V
+chr13 123460 bnd_X A ]chr2:321681]A     .   PASS  SVTYPE=BND;PARID=bnd_U;MATEID=bnd_W
+```
+
+## BEDPE Entry options
+### AFF
+The coordinates label the first and last bases affected. Not clear what this means here. I contend it is invalid and you'd have to fallback to one of the other methodologies below.
+
+### LOB
+The coordinates label the base to the left of the breakpoint(s).
+```
+chr2 321680 321681  chr13   123458  123459
+chr2    321680  321681  chr13   123455  123456
+chr13 123455    123456  chr2    321680  321681
+chr13 123458    123459  chr2    321680  321681
+```
+
+### ROB
+The coordinates label the base to the right of the breakpoint(s).
+```
+chr2 321681 321682  chr13   123459  123460
+chr2    321682  321683  chr13   123456  123457
+chr13 123456    123457  chr2    321681  321682
+chr13 123459    123460  chr2    321681  321682
+```
+
+### BPT
+Coordinates are 0-length ranges specifying the position of the breakpoint.
+```
+chr2 321681 321681  chr13   123459  123459
+chr2    321681  321681  chr13   123456  123456
+```
+
+### LAB
+Coordinates specify the "last-aligned base" as in VCF.
+
+```
+chr2 321680 321681  chr13   123459  123460
+chr2    321681  321682  chr13   123455  123456
+chr13 123455    123456  chr2    321681  321682
+chr13 123459    123460  chr2    321680  321681
+```
+
+# Telomeric Insertions (Left)
+
+## Alignment for fictional telomeric INS (on left)
+We will call the chromosome below 'chr'.
+
+Plain alignment:
+```
+REF --ACGTGCC
+ALT GCACGTGCC
+```
+
+With 0-based coordinates (BED):
+```
+      0123456
+REF --ACGTGCC
+ALT GCACGTGCC
+```
+
+With 1-based coordinates (VCF):
+```
+      1234567
+REF --ACGTGCC
+ALT GCACGTGCC
+```
+
+## VCF Entry as a precise SV 
+Assume chromosome name is 1
+```
+chr 0 . N  <INS> . PASS  SVTYPE=INS;END=0
+```
+
+## VCF Entry as BND entries (again, precise)
+```
+chr 0 . N .[ctg1:1[  . PASS  SVTYPE=BND
+chr 1 . A ]ctg1:1000]A  . PASS  SVTYPE=BND
+```
+
+## BEDPE Entry options
+### AFF
+The coordinates label the first and last affected bases. Would have to label the base before the insertion. Can't do this in BED.
+
+### LOB
+The coordinates label the base to the left of the breakpoint(s). This breaks for this variant type.
+
+### ROB
+The coordinates label the base to the right of the breakpoint(s).
+```
+chr 0 1 chr 0 1
+```
+
+### BPT
+Coordinates are 0-length ranges specifying the position of the breakpoint.
+```
+chr 0 0 chr 0 0
+```
+
+### LAB
+Coordinates specify the "last-aligned base" as in VCF. This breaks for the same reason as left-most base.
+
+
+# Telomeric Insertions (Right)
+
+## Alignment for fictional telomeric INS (on left)
+We will call the chromosome below 'chr'.
+
+Plain alignment:
+```
+REF ACGTGCC--
+ALT ACGTGCCGC
+```
+
+With 0-based coordinates (BED):
+```
+    0123456  
+REF ACGTGCC--
+ALT ACGTGCCGC
+```
+
+With 1-based coordinates (VCF):
+```
+    1234567  
+REF ACGTGCC--
+ALT ACGTGCCGC
+```
+
+## VCF Entry as a precise SV 
+Assume chromosome name is 1
+```
+chr 7 . C  CGC . PASS  SVTYPE=INS;END=7
+```
+
+## VCF Entry as BND entries (again, precise)
+```
+chr 7 . C C[ctg1:1[  . PASS  SVTYPE=BND
+chr 8 . N ]ctg1:1000].  . PASS  SVTYPE=BND
+```
+
+## BEDPE Entry options
+### AFF
+The coordinates label the first and last affected bases. For insertions this could/should be the base to the left of the event.
+```
+chr 6 7 chr 6 7
+```
+
+### LOB
+The coordinates label the base to the left of the breakpoint(s).
+```
+chr 6 7 chr 6 7
+```
+
+### ROB
+The coordinates label the base to the right of the breakpoint(s).
+```
+chr 7 8 chr 7 8
+```
+
+### BPT
+Coordinates are 0-length ranges specifying the position of the breakpoint.
+```
+chr 7 7 chr 7 7
+```
+
+### LAB
+Coordinates specify the "last-aligned base" as in VCF.
+```
+chr 6 7 chr 6 7
+```
+
+
+
+
+### Strandness of Bedpe converted from vcf4.2 by [svtools](https://github.com/hall-lab/svtools/issues/5#issuecomment-161432757)
 
 let me make it more clear:
 
