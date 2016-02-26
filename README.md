@@ -62,6 +62,11 @@ Also, read this [post](https://standage.github.io/on-genomic-interval-notation.h
 3. [PyVCF](http://pyvcf.readthedocs.org/en/latest/) - A Variant Call Format Parser for Python
 4. [VcfR: an R package to manipulate and visualize VCF format data](https://cran.r-project.org/web/packages/vcfR/index.html)
 
+### Tools for bam files
+
+1. [VariantBam](https://github.com/jwalabroad/VariantBam): Filtering and profiling of next-generational sequencing data using region-specific rules
+
+
 ### Annotate and explore variants 
 1. Variant Effect Predictor: [VEP](http://useast.ensembl.org/info/docs/tools/vep/index.html)
 2. [SNPEFF](http://snpeff.sourceforge.net/)
