@@ -101,4 +101,5 @@ Also, read this [post](https://standage.github.io/on-genomic-interval-notation.h
 
 
 ### CRISPR
-*[The caRpools package - Analysis of pooled CRISPR Screens](https://cran.r-project.org/web/packages/caRpools/vignettes/CaRpools.html)
+* [The caRpools package - Analysis of pooled CRISPR Screens](https://cran.r-project.org/web/packages/caRpools/vignettes/CaRpools.html)
+* [CRISPR Library Designer (CLD): a software for the multispecies design of sgRNA libraries](https://github.com/boutroslab/cld)
