@@ -62,6 +62,12 @@ Also, read this [post](https://standage.github.io/on-genomic-interval-notation.h
 3. [PyVCF](http://pyvcf.readthedocs.org/en/latest/) - A Variant Call Format Parser for Python
 4. [VcfR: an R package to manipulate and visualize VCF format data](https://cran.r-project.org/web/packages/vcfR/index.html)
 
+### Tools for MAF files
+TCGA has all the variants calls in MAF format. Please read a [post](https://www.biostars.org/p/69222/) by Cyriac Kandoth. 
+
+1. [convert vcf to MAF](https://github.com/mskcc/vcf2maf): perl script by Cyriac Kandoth.
+2. once converted to MAF, one can use this [MAFtools](https://github.com/PoisonAlien/maftools) to do visualization: oncoprint wraps complexHeatmap, Lollipop and Mutational Signatures etc. Very cool, I just found it...
+
 ### Tools for bam files
 
 1. [VariantBam](https://github.com/jwalabroad/VariantBam): Filtering and profiling of next-generational sequencing data using region-specific rules
