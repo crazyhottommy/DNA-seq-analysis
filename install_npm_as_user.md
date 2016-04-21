@@ -1,4 +1,4 @@
-In order to visalize the supporting reads for a structural variant from a bam file. I need to use [pybamview](http://melissagymrek.com/pybamview/index.html).  
+In order to visualize the supporting reads for a structural variant from a bam file. I need to use [pybamview](http://melissagymrek.com/pybamview/index.html).  
 
 It requires installing [npm](https://nodejs.org/en/) to make [snapshots of bam](http://melissagymrek.com/pybamview/snapshots.html) files.
 
