@@ -2,6 +2,17 @@
 
 The standard format for variants is the vcf. Read the vcf4.2 [specification](https://samtools.github.io/hts-specs/VCFv4.2.pdf).
 
+### Lumpy outputs structural variants in VCF4.2 format.
+
+some notes from [Colby Chiang](https://github.com/hall-lab/svtools/issues/104):
+
+>BND is a catch-all for a generic breakpoint, so you can't assume all to be translocations
+
+>When LUMPY reports a BND with both sides on the same chromsome, it is indicating misoriented reads (++ or --). When we see reciprocal evidence (both ++ and -- from the same event), LUMPY calls this an inversion. Howevere, when only one of these orientations are observed, it is designated a BND. Some of these "one-sided inversion" BNDs might be true inversions where we miss one of the sides, and others may be parts of complex variants or artifacts.
+
+Thanks for clarifying this. So, a BND with both sides on the same chromosome can be an INV. Can it be a DUP or DEL?
+
+>LUMPY never represents breakpoints with DEL or DUP orientations as BNDs. Only one sided inversions and interchromosomal events
 
 ### BEDPE format
 
