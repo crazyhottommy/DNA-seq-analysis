@@ -6,6 +6,17 @@ The standard format for variants is the vcf. Read the vcf4.2 [specification](htt
 
 some notes from [Colby Chiang](https://github.com/hall-lab/svtools/issues/104):
 
+Hi, Thanks for making this useful tool. I am using vcfToBedpe to convert vcf from lumpy.
+The resulting bedpe files in column 9 and 10 have strandness info "+" "-"
+what does exactly those strandness tell us?
+for translocations (BND), I found there are 4 different combinations of the strandness.
+for deletions, it is always+ -
+for inversions, it is always + +
+for duplications, it is always - +
+
+Thanks very much!
+Ming
+
 >BND is a catch-all for a generic breakpoint, so you can't assume all to be translocations
 
 >When LUMPY reports a BND with both sides on the same chromsome, it is indicating misoriented reads (++ or --). When we see reciprocal evidence (both ++ and -- from the same event), LUMPY calls this an inversion. Howevere, when only one of these orientations are observed, it is designated a BND. Some of these "one-sided inversion" BNDs might be true inversions where we miss one of the sides, and others may be parts of complex variants or artifacts.
