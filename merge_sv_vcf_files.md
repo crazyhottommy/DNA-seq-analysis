@@ -21,6 +21,6 @@ see a [workflow](https://github.com/hall-lab/svtools/blob/master/svtools_demo.sh
 
 [mergeSVcallers](https://github.com/zeeev/mergeSVcallers) from Zev who also developed [Wham](https://github.com/zeeev/wham), a new SV caller. merging for translocations are not implemented yet, but in the plan of Zev.
 
-** I have written a blog [post](http://crazyhottommy.blogspot.com/2016/03/breakpoints-clustering-for-structural.html) for this type of task using InteractionSet bioconductor pacakge** 
+**I have written a blog [post](http://crazyhottommy.blogspot.com/2016/03/breakpoints-clustering-for-structural.html) for this type of task using InteractionSet bioconductor pacakge** 
 
 In the next release of bioconductor (April 22, 2016), the `rtracklayer` package will have a way to [represent GRange pairs](https://support.bioconductor.org/p/78082/#79195).
