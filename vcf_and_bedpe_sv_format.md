@@ -6,13 +6,13 @@ The standard format for variants is the vcf. Read the vcf4.2 [specification](htt
 
 some notes from [Colby Chiang](https://github.com/hall-lab/svtools/issues/104):
 
-Hi, Thanks for making this useful tool. I am using vcfToBedpe to convert vcf from lumpy.
+Hi, Thanks for making this useful tool. I am using `vcfToBedpe` to convert vcf from lumpy.
 The resulting bedpe files in column 9 and 10 have strandness info "+" "-"
-what does exactly those strandness tell us?
-for translocations (BND), I found there are 4 different combinations of the strandness.
-for deletions, it is always+ -
-for inversions, it is always + +
-for duplications, it is always - +
+what does exactly those strandness tell us?  
+for translocations (BND), I found there are 4 different combinations of the strandness. same or different chromosomes.  
+for deletions, it is always+ - on the same chromosome    
+for inversions, it is always + + on the same chromosome    
+for duplications, it is always - + on the same chromosome 
 
 Thanks very much!
 Ming
