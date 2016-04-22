@@ -51,7 +51,7 @@ Also, read this [post](https://standage.github.io/on-genomic-interval-notation.h
 
 ### Copy number variants 
 * [Interactive analysis and assessment of single-cell copy-number variations](http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.3578.html): [Ginkgo](http://qb.cshl.edu/ginkgo)   
-* 
+* [Copynumber Viewer](https://github.com/RCollins13/CNView)
 
 ### Tools for visulization 
 1. [New app gene.iobio](http://bib.oxfordjournals.org/content/14/6/671.full)  
