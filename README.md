@@ -98,6 +98,7 @@ TCGA has all the variants calls in MAF format. Please read a [post](https://www.
 * [paper: Toward understanding and exploiting tumor heterogeneity](http://www.ncbi.nlm.nih.gov/pubmed/26248267)  
 * [paper: The prognostic landscape of genes and infiltrating immune cells across human cancers](http://www.ncbi.nlm.nih.gov/pubmed/26193342)  from Alizadeh lab.
 * [Robust enumeration of cell subsets from tissue expression profiles](http://www.nature.com/nmeth/journal/v12/n5/abs/nmeth.3337.html)  from Alizadeh lab, and the [CIBERSORT tool](https://cibersort.stanford.edu/index.php)  
+* [A step-by-step guide to estimate tumor clonality/purity from variant allele frequency data](https://github.com/hammerlab/vaf-experiments)
 
 ### mutual exclusiveness of mutations
 * [MEGSA](http://biorxiv.org/content/early/2015/04/09/017731): A powerful and flexible framework for analyzing mutual exclusivity of tumor mutations.
