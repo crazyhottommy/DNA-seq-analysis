@@ -54,7 +54,7 @@ Also, read this [post](https://standage.github.io/on-genomic-interval-notation.h
 * [Copynumber Viewer](https://github.com/RCollins13/CNView)
 
 ### Tools for visulization 
-1. [New app gene.iobio](http://bib.oxfordjournals.org/content/14/6/671.full)  
+1. [New app gene.iobio](http://iobio.io/)  
 [App here](http://gene.iobio.io/?rel0=proband&rel1=mother&rel2=father) I will definetely have it a try.
 
 ### Tools for vcf files
