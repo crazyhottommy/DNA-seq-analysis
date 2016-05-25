@@ -111,3 +111,10 @@ TCGA has all the variants calls in MAF format. Please read a [post](https://www.
 ### CRISPR
 * [The caRpools package - Analysis of pooled CRISPR Screens](https://cran.r-project.org/web/packages/caRpools/vignettes/CaRpools.html)
 * [CRISPR Library Designer (CLD): a software for the multispecies design of sgRNA libraries](https://github.com/boutroslab/cld)
+
+
+### Single-cell DNA sequencing
+
+* A review paper 2016: [Single-cell genome sequencing:current state of the science](http://www.nature.com/nrg/journal/v17/n3/abs/nrg.2015.16.html) 
+* [Monovar](http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.3835.html): single-nucleotide variant detection in single cells
+
