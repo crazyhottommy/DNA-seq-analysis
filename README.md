@@ -90,6 +90,9 @@ TCGA has all the variants calls in MAF format. Please read a [post](https://www.
 2. [deconstructSigs](https://github.com/raerose01/deconstructSigs) aims to determine the contribution of known mutational processes to a tumor sample. By using deconstructSigs, one can: Determine the weights of each mutational signature contributing to an individual tumor sample; Plot the reconstructed mutational profile (using the calculated weights) and compare to the original input sample
 3. [Fast Principal Component Analysis of Large-Scale Genome-Wide Data](https://github.com/gabraham/flashpca)
 
+### Identify driver genes
+
+* [MUFFINN: cancer gene discovery via network analysis of somatic mutation data](http://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-0989-x?platform=hootsuite)
 
 ### Tumor purity
 * ESTIMATE
