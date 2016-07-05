@@ -28,7 +28,7 @@ options: -N     maximal Pieces of evidences Support the variants for normal samp
 SSC_cutoff=18
 Normal_SU=2
 
-while getopts ":hT:N:R:"  OPTION
+while getopts ":hS:N:"  OPTION
 do
 	case "$OPTION" in
 	h)  usage
