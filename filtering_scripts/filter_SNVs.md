@@ -22,3 +22,9 @@ newname=$(echo $1 | sed -E 's/.+\/(.+-TCGA-[0-9A-Z]{2}-[0-9A-Z]{4}-[0-9]{2})-.+/
 #echo $newname
 cp $1 /rsrch1/genomic_med/mtang1/TCGA-WGS-SV/SVs_final1/${newname}.vcf.gz
 ```
+
+filter SNVs based on rules [here](https://github.com/crazyhottommy/DNA-seq-analysis/blob/master/speedseq_sv_filter.md#for-snvs): SSC >=40, alternative read in normal <=2.
+
+```bash
+find . -name "*vcf.gz" | parallel -k -j 5 ./filter_SNV.sh {}
+```
