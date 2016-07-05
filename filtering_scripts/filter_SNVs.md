@@ -20,5 +20,5 @@ set -o pipefail
 newname=$(echo $1 | sed -E 's/.+\/(.+-TCGA-[0-9A-Z]{2}-[0-9A-Z]{4}-[0-9]{2})-.+/\1/')
 
 #echo $newname
-cp $1 /rsrch1/genomic_med/mtang1/TCGA-WGS-SV/SVs_final1/${newname}.sv.vcf.gz
+cp $1 /rsrch1/genomic_med/mtang1/TCGA-WGS-SV/SVs_final1/${newname}.vcf.gz
 ```
