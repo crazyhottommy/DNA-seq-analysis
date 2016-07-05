@@ -6,5 +6,19 @@ structural variant calls and SNV calls are in the same folder. put only SNV file
 
 ```bash
 mkdir SNVs_final
-find *speedseq  ! -name '*sv.vcf.gz' | grep "vcf.gz$" | parallel cp {} SNVs_final/
+find *speedseq  ! -name '*sv.vcf.gz' | grep "vcf.gz$" | parallel -j 6 ./change_name_gz.sh {}
+```
+
+`change_name_gz.sh`: 
+
+```bash
+#! /bin/bash
+set -e
+set -u
+set -o pipefail
+
+newname=$(echo $1 | sed -E 's/.+\/(.+-TCGA-[0-9A-Z]{2}-[0-9A-Z]{4}-[0-9]{2})-.+/\1/')
+
+#echo $newname
+cp $1 /rsrch1/genomic_med/mtang1/TCGA-WGS-SV/SVs_final1/${newname}.sv.vcf.gz
 ```
