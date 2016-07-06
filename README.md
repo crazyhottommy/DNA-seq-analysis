@@ -52,6 +52,8 @@ Also, read this [post](https://standage.github.io/on-genomic-interval-notation.h
 ### Copy number variants 
 * [Interactive analysis and assessment of single-cell copy-number variations](http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.3578.html): [Ginkgo](http://qb.cshl.edu/ginkgo)   
 * [Copynumber Viewer](https://github.com/RCollins13/CNView)
+* [paper: Computational tools for copy number variation (CNV) detection using next-generation sequencing data: features and perspectives](http://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-14-S11-S1)
+* [bioconductor copy number work flow](https://www.bioconductor.org/help/course-materials/2014/SeattleOct2014/B02.2.3_CopyNumber.html)
 
 ### Tools for visulization 
 1. [New app gene.iobio](http://iobio.io/)  
