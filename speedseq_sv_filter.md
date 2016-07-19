@@ -25,6 +25,7 @@ pairToBed -type neither  -a NA12878.lumpy.s.bedpe -b LCR-hs37d5.bed
 
 ```
 
+A tool by Brad Chapman to prioritize SVs: [Prioritize small variants, structural variants and coverage based on biological inputs](https://github.com/chapmanb/bcbio.prioritize)
 
 **when filtering SV calls, one needs to take account of sequencing depth, tumor purity etc.**
 
