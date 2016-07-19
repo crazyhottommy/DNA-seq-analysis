@@ -65,6 +65,7 @@ Also, read this [post](https://standage.github.io/on-genomic-interval-notation.h
 3. [PyVCF](http://pyvcf.readthedocs.org/en/latest/) - A Variant Call Format Parser for Python
 4. [VcfR: an R package to manipulate and visualize VCF format data](https://cran.r-project.org/web/packages/vcfR/index.html)
 5. [Varapp](https://varapp-demo.vital-it.ch/docs/src/about.html) is an application to filter genetic variants, with a reactive graphical user interface. Powered by [GEMINI](https://varapp-demo.vital-it.ch/docs/src/about.html).
+6. [varmatch: robust matching of small variant datasets using flexible scoring schemes](https://github.com/medvedevgroup/varmatch)
 
 ### Tools for MAF files
 TCGA has all the variants calls in MAF format. Please read a [post](https://www.biostars.org/p/69222/) by Cyriac Kandoth. 
