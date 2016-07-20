@@ -28,3 +28,19 @@ filter SNVs based on rules [here](https://github.com/crazyhottommy/DNA-seq-analy
 ```bash
 find . -name "*vcf.gz" | parallel -k -j 5 ./filter_SNV.sh {}
 ```
+
+### checking how many SNV vcf files and SV vcf files
+
+```bash
+## for genotyped ones
+find *speedseq -name "*sv.vcf.gz" | parallel ./change_name_gz.sh {} | sort | uniq | wc -l
+944
+
+## for not genotyped ones
+find *speedseq -name "*sv.vcf" | parallel ./change_name_vcf.sh {} | sort | uniq | wc -l
+27
+
+find *speedseq  ! -name '*sv.vcf.gz' | grep "vcf.gz$" | parallel -j 6 ./change_name_gz.sh {} | sort | uniq | wc -l
+925
+
+```
