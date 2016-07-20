@@ -6,7 +6,7 @@ structural variant calls and SNV calls are in the same folder. put only SNV file
 
 ```bash
 mkdir SNVs_final
-find *speedseq  ! -name '*sv.vcf.gz' | grep "vcf.gz$" | parallel -j 6 ./change_name_gz.sh {}
+find *speedseq  ! -name '*sv.vcf.gz' | grep -v "sv.vcf" |  grep "vcf.gz$" | parallel -j 6 ./change_name_gz.sh {}
 ```
 
 `change_name_gz.sh`: 
@@ -40,7 +40,7 @@ find *speedseq -name "*sv.vcf.gz" | parallel ./change_name_gz.sh {} | sort | uni
 find *speedseq -name "*sv.vcf" | parallel ./change_name_vcf.sh {} | sort | uniq | wc -l
 27
 
-find *speedseq  ! -name '*sv.vcf.gz' | grep "vcf.gz$" | parallel -j 6 ./change_name_gz.sh {} | sort | uniq | wc -l
+find *speedseq  ! -name '*sv.vcf.gz' | grep -v "sv.vcf" |  grep "vcf.gz$" | parallel -j 6 ./change_name_gz.sh {} | sort | uniq | wc -l
 925
 
 ```
