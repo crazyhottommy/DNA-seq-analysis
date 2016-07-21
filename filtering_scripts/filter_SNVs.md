@@ -82,7 +82,7 @@ find *speedseq -name "*sv.vcf.gz" | parallel ./change_name_gz.sh {} | sort | uni
 find *speedseq -name "*sv.vcf" | parallel ./change_name_vcf.sh {} | sort | uniq | wc -l
 27
 
-find *speedseq  ! -name '*sv.vcf.gz' | grep -v "sv.vcf" |  grep "vcf.gz$" | parallel -j 6 ./change_name_gz.sh {} | sort | uniq | wc -l
+find *speedseq*  ! -name '*sv.vcf.gz' | grep -v "sv.vcf" |  grep "vcf.gz$" | parallel -j 6 ./change_name_gz.sh {} | sort | uniq | wc -l
 925
 
 find . -type d  -name "*speedseq*" | parallel -k flowr status x={} 2> flowr_status_all.txt
