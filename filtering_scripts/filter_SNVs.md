@@ -76,21 +76,19 @@ comment out the `cp` and uncomment the `echo`
 ```bash
 ## for genotyped ones
 find *speedseq -name "*sv.vcf.gz" | parallel ./change_name_gz.sh {} | sort | uniq | wc -l
-944
 
-## for not genotyped ones
+## for genotyped ones
 find *speedseq -name "*sv.vcf" | parallel ./change_name_vcf.sh {} | sort | uniq | wc -l
-27
 
+
+## for SNVs
 find *speedseq*  ! -name '*sv.vcf.gz' | grep -v "sv.vcf" |  grep "vcf.gz$" | parallel -j 6 ./change_name_gz.sh {} | sort | uniq | wc -l
-925
 
 find . -type d  -name "*speedseq*" | parallel -k flowr status x={} 2> flowr_status_all.txt
 
 ```
 
 Note:
-UCEC-TCGA-BK-A139-01 has two SNV calls, 01A and 01C. but only one SV call in gz format and the other in unzip format.
-one OV-TCGA-13-1411-01 SV call failed (no even ungenotyped vcf generated). Total 1046 samples processed.
+UCEC-TCGA-BK-A139-01 has two SNV calls, 01A and 01C. butone SV call in gz format and the other in unzip format.
+one OV-TCGA-13-1411-01 SV call failed (no even ungenotyped vcf generated). Total 1047 samples processed.
 
-Total 1037 samples processed.
