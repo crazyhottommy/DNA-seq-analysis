@@ -90,5 +90,7 @@ find . -type d  -name "*speedseq*" | parallel -k flowr status x={} 2> flowr_stat
 ```
 
 Note:
-UCEC-TCGA-BK-A139-01 has two SNV calls, 01A and 01C. but only one SV call.
-one OV-TCGA-13-1411-01 SV call failed (no even ungenotyped vcf generated).
+UCEC-TCGA-BK-A139-01 has two SNV calls, 01A and 01C. but only one SV call in gz format and the other in unzip format.
+one OV-TCGA-13-1411-01 SV call failed (no even ungenotyped vcf generated). Total 1046 samples processed.
+
+Total 1037 samples processed.
