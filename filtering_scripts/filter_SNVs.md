@@ -6,7 +6,7 @@ structural variant calls and SNV calls are in the same folder. put only SNV file
 
 ```bash
 mkdir SNVs_final
-find *speedseq  ! -name '*sv.vcf.gz' | grep -v "sv.vcf" |  grep "vcf.gz$" | parallel -j 6 ./change_name_gz.sh {}
+find *speedseq*  ! -name '*sv.vcf.gz' | grep -v "sv.vcf" |  grep "vcf.gz$" | parallel -j 6 ./change_name_gz.sh {}
 ```
 
 `change_name_gz.sh`: 
@@ -29,7 +29,49 @@ filter SNVs based on rules [here](https://github.com/crazyhottommy/DNA-seq-analy
 find . -name "*vcf.gz" | parallel -k -j 5 ./filter_SNV.sh {}
 ```
 
+#### put all the SV calls together
+
+```bash
+mkdir SVs_final
+find *speedseq* -name '*sv.vcf.gz'| parallel -j 6 ./change_name_gz.sh {}
+```
+modify the `change_name_gz.sh` a bit, add `sv` suffix
+
+```bash
+#! /bin/bash
+set -e
+set -u
+set -o pipefail
+
+newname=$(echo $1 | sed -E 's/.+\/(.+-TCGA-[0-9A-Z]{2}-[0-9A-Z]{4}-[0-9]{2})-.+/\1/')
+
+#echo $newname
+cp $1 /rsrch1/genomic_med/mtang1/TCGA-WGS-SV/WGS/SVs_final/${newname}.sv.vcf.gz
+```
+** there are SV calls not genotyped and those are in unzipped form**
+
+```bash
+find *speedseq* -name '*sv.vcf'| parallel -j 6 ./change_name_vcf.sh {}
+```
+`change_name_vcf.sh`:
+
+```bash
+#! /bin/bash
+set -e
+set -u
+set -o pipefail
+
+newname=$(echo $1 | sed -E 's/.+\/(.+-TCGA-[0-9A-Z]{2}-[0-9A-Z]{4}-[0-9]{2})-.+/\1/')
+
+#echo $newname
+cp $1 /rsrch1/genomic_med/mtang1/TCGA-WGS-SV/WGS/SVs_final/vcfs_no_genotypes/${newname}.sv.vcf
+```
+
+
+
 ### checking how many SNV vcf files and SV vcf files
+
+comment out the `cp` and uncomment the `echo`
 
 ```bash
 ## for genotyped ones
