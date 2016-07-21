@@ -88,3 +88,7 @@ find *speedseq*  ! -name '*sv.vcf.gz' | grep -v "sv.vcf" |  grep "vcf.gz$" | par
 find . -type d  -name "*speedseq*" | parallel -k flowr status x={} 2> flowr_status_all.txt
 
 ```
+
+Note:
+UCEC-TCGA-BK-A139-01 has two SNV calls, 01A and 01C. but only one SV call.
+one OV-TCGA-13-1411-01 SV call failed (no even ungenotyped vcf generated).
