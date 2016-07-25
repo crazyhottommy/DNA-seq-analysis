@@ -124,7 +124,7 @@ Filtering SNVs takes long time, I used HPC to do it.
 ```bash
 find *gz | parallel 'echo ./filter_SNVs.sh {} > {}.command'
 
-find *command | parallel ./generate_pbs.sh -a {} -j {} -t 00:15:00 -m 4gb -c 1 -o a > {.}.pbs
+find *command | parallel './generate_pbs.sh -a {} -j {} -t 00:15:00 -m 4gb -c 1 -o a > {.}.pbs'
 
 for pbs in *pbs
 do
