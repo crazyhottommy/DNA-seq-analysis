@@ -118,3 +118,116 @@ find *speedseq*  -name "rln_cmd_1.sh" | sed -r 's/.+\/.+-(TCGA-[0-9A-Z]{2}-[0-9A
       1 TCGA-TQ-A7RK-02
 
 ```
+
+Filtering SNVs takes long time, I used HPC to do it.
+
+```bash
+find *gz | parallel 'echo ./filter_SNVs.sh {} > {}.command'
+
+find *command | parallel ./generate_pbs.sh -a {} -j {} -t 00:15:00 -m 4gb -c 1 -o a > {.}.pbs
+
+for pbs in *pbs
+do
+      msub $pbs
+      sleep 5
+done
+```
+`generate_pbs.sh`:
+
+```bash
+#!/bin/bash
+
+# Wrapper to make MSUB job format on HPC running Moab/Torque job scheduler.
+# @sbamin | nautilus
+## getopts schema is modified from from script by @r_sabarinathan
+
+set -e
+set -u
+set -o pipefail
+
+# usage
+show_help() {
+cat << EOF
+
+Wrapper to make BSUB job format on HPC running Moab/Torque job scheduler. 
+
+Only required parameter is path to file containing commands to be run on cluster. 
+This file will be copied verbatim following MSUB arguments.
+
+Default MSUB options are: medium queue with 2 hours walltime, arpprox 16GB RAM and 4 CPU cores with present work directory as current work directory.
+
+Usage: ${0##*/} -a <path to files containing commands> > <job.msub>"
+    -h  display this help and exit
+        -j  job name (default: j<random id>_username)
+        -w  work directory (default: present work directory)
+        -t  walltime in HH:MM:SS (default: 02:00:00)  
+        -m  memory in gb (default: 16gb)
+        -n  number of nodes (default: 1)
+        -c  cpu cores per node (default: 4)
+        -o email notifications (default: ae)
+        -a  REQUIRED: path to file containing commands to be run on cluster. This file will be copied verbatim following MSUB arguments.
+Example: ${0##*/} -j "sample_job" -w "/home/foo/myworkdir" -t 26:00:00 -m 64gb -n 1 -c 24 -o e -a "/home/foo/mycommands.txt" > /home/foo/sample.msub
+Quotes are important for variable names containig spaces and special characters.
+EOF
+}
+if [[ $# == 0 ]];then show_help;exit 1;fi
+# read input
+expression=0
+while getopts "j:w:q:t:m:n:c:o:a:h" opt; do
+    case "$opt" in
+        h) show_help;exit 0;;
+        j) JOBNAME=$OPTARG;;
+        w) CWD=$OPTARG;;
+        t) WALLTIME=$OPTARG;;
+        m) MEMORY=$OPTARG;;
+        n) NODES=$OPTARG;;
+        c) CPU=$OPTARG;;
+        o) EMAILOPTS=$OPTARG;; 
+        a) MYARGS=$OPTARG;;
+       '?')show_help >&2; exit 1 ;;
+    esac
+done
+DJOBID=$(printf "j%s_%s" "$RANDOM" "$(whoami)")
+JOBNAME=${JOBNAME:-$DJOBID}
+CWD=${CWD:-$(pwd)}
+STDOUT=$(printf "%s/log_%s.out" ${CWD} $JOBNAME)
+STDERR=$(printf "%s/log_%s.err" ${CWD} $JOBNAME)
+WALLTIME=${WALLTIME:-"02:00:00"}
+MEMORY=${MEMORY:-"16gb"}
+NODES=${NODES:-"1"}
+CPU=${CPU:-"4"}
+EMAILOPTS=${EMAILOPTS:-"ae"}
+if [[ ! -s ${MYARGS} ]];then
+    echo -e "\nERROR: Command file either does not exist at ${MYARGS} location or empty.\n"
+    show_help
+    exit 1
+fi
+##### Following lsf block will be parsed based on arguments supplied #####
+cat <<EOF
+#PBS -N ${JOBNAME}                                # name of the job
+#PBS -d ${CWD}                                    # the workding dir for each job, this is <flow_run_path>/uniqueid/tmp
+#PBS -o ${STDOUT}                                 # output is sent to logfile, stdout + stderr by default
+#PBS -e ${STDERR}                                 # output is sent to logfile, stdout + stderr by default
+#PBS -l walltime=${WALLTIME}                      # Walltime in minutes
+#PBS -l mem=${MEMORY}                             # Memory requirements in Kbytes
+#PBS -l nodes=${NODES}:ppn=${CPU}                 # CPU reserved
+#PBS -M mtang1@mdanderson.org                           # for notifications
+#PBS -m ${EMAILOPTS}                              # send email when job ends 
+#PBS -V
+
+## args come here
+## --- DO NOT EDIT from below here---- ##
+## following will always overwrite previous output file, if any.
+set +o noclobber
+$(printf "echo \"BEGIN at \$(date)\" >> %s" ${STDOUT})
+## File containing commands will be copied here verbatim ##
+###################### START USER SUPPLIED COMMANDS ######################
+$(cat ${MYARGS})
+###################### END USER SUPPLIED COMMANDS ######################
+exitstat=\$?
+$(printf "echo \"END at \$(date)\" >> %s" ${STDOUT})
+$(printf "echo \"exit status was \${exitstat} >> %s\"" ${STDOUT})
+$(printf "exit \${exitstat}")
+## END ##
+EOF
+```
