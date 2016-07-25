@@ -92,3 +92,29 @@ Note:
 UCEC-TCGA-BK-A139-01 has two SNV calls, 01A and 01C. butone SV call in gz format and the other in unzip format.
 one OV-TCGA-13-1411-01 SV call failed (no even ungenotyped vcf generated). Total 1047 samples processed.
 
+11 samples processed twice:
+```bash
+find *speedseq*  -name "rln_cmd_1.sh" | sed -r 's/.+\/.+-(TCGA-[0-9A-Z]{2}-[0-9A-Z]{4}-[0-9]{2})-.+/\1/' | sort | uniq -c | sort -k2,2 -nr | head -20
+
+2 TCGA-TM-A7CF-01
+      2 TCGA-HT-A61B-01
+      2 TCGA-FD-A3N5-01
+      2 TCGA-DK-A1AG-01
+      2 TCGA-DK-A1A7-01
+      2 TCGA-DK-A1A6-01
+      2 TCGA-DK-A1A5-01
+      2 TCGA-CF-A27C-01
+      2 TCGA-BL-A13J-01
+      2 TCGA-BK-A139-01
+      2 TCGA-44-2666-01
+      1 TCGA-X2-A95T-01
+      1 TCGA-WP-A9GB-01
+      1 TCGA-V5-A7RC-06
+      1 TCGA-V5-A7RC-01
+      1 TCGA-TQ-A8XE-02
+      1 TCGA-TQ-A8XE-01
+      1 TCGA-TQ-A7RV-02
+      1 TCGA-TQ-A7RV-01
+      1 TCGA-TQ-A7RK-02
+
+```
