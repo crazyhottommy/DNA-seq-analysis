@@ -1,5 +1,7 @@
 #! /bin/bash
 
+## Author Ming Tang
+## 07/25/2016 last update
 ### This script is used to filter the SNV calls produced by speedseq
 ### it is a wrapper for the vawk https://github.com/cc2qe/vawk
 
