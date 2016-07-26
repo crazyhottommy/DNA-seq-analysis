@@ -233,3 +233,10 @@ $(printf "exit \${exitstat}")
 ## END ##
 EOF
 ```
+
+### checking Low pass data
+
+```bash
+cat LPS_speedseq_index.csv | csvcut -c1 | sed '1d' | sort | uniq > all.samples.txt
+find *speedseq*  -name "rln_cmd_1.sh" | sed -r 's/.+\/.+-(TCGA-[0-9A-Z]{2}-[0-9A-Z]{4}-[0-9]{2})-.+/\1/' | sort | uniq > run.txt
+```
