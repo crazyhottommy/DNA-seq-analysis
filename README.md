@@ -119,6 +119,9 @@ TCGA has all the variants calls in MAF format. Please read a [post](https://www.
 * [MEGSA](http://biorxiv.org/content/early/2015/04/09/017731): A powerful and flexible framework for analyzing mutual exclusivity of tumor mutations.
 * [CoMet](https://github.com/raphael-group/comet)  
 
+### mutation enrich in pathways
+*[PathScore: a web tool for identifying altered pathways in cancer data](http://pathscore.publichealth.yale.edu/)
+
 ### Non-coding mutations
 * [Large-scale Analysis of Variants in noncoding Annotations:LARVA](http://larva.gersteinlab.org/)
 
