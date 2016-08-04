@@ -130,6 +130,8 @@ TCGA has all the variants calls in MAF format. Please read a [post](https://www.
 * [The caRpools package - Analysis of pooled CRISPR Screens](https://cran.r-project.org/web/packages/caRpools/vignettes/CaRpools.html)
 * [CRISPR Library Designer (CLD): a software for the multispecies design of sgRNA libraries](https://github.com/boutroslab/cld)
 
+### long reads
+[Quality Assessment Tools for Oxford Nanopore MinION data](https://bioconductor.org/packages/3.2/bioc/html/IONiseR.html)
 
 ### Single-cell DNA sequencing
 
