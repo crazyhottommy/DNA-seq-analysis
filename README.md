@@ -132,6 +132,7 @@ TCGA has all the variants calls in MAF format. Please read a [post](https://www.
 
 ### long reads
 [Quality Assessment Tools for Oxford Nanopore MinION data](https://bioconductor.org/packages/3.2/bioc/html/IONiseR.html)
+[Signal-level algorithms for MinION data](https://github.com/jts/nanopolish)
 
 ### Single-cell DNA sequencing
 
