@@ -76,6 +76,7 @@ Also, read this [post](https://standage.github.io/on-genomic-interval-notation.h
 5. [Varapp](https://varapp-demo.vital-it.ch/docs/src/about.html) is an application to filter genetic variants, with a reactive graphical user interface. Powered by [GEMINI](https://varapp-demo.vital-it.ch/docs/src/about.html).
 6. [varmatch: robust matching of small variant datasets using flexible scoring schemes](https://github.com/medvedevgroup/varmatch)
 7. [vcf-validator](https://github.com/EBIvariation/vcf-validator) validate your VCF files!
+8. [BrowseVCF](https://github.com/BSGOxford/BrowseVCF): a web-based application and workflow to quickly prioritize disease-causative variants in VCF files
 
 ### Tools for MAF files
 TCGA has all the variants calls in MAF format. Please read a [post](https://www.biostars.org/p/69222/) by Cyriac Kandoth. 
