@@ -233,6 +233,43 @@ $(printf "exit \${exitstat}")
 ## END ##
 EOF
 ```
+As mentioned, some of the jobs failed. 
+check which one failed:
+```bash
+ls *filtered_SNV.vcf | sed 's/.filtered_SNV.vcf//' | sort | uniq > finished_samples.txt
+ls *vcf.gz | sed 's/.vcf.gz//' | sort | uniq > total_samples.txt
+
+##failed samples
+comm -23 total_samples.txt finished_samples.txt
+ESCA-TCGA-JY-A93C-01
+GBM-TCGA-06-0145-01
+GBM-TCGA-06-0152-01
+GBM-TCGA-06-0185-01
+GBM-TCGA-06-0648-01
+KIRP-TCGA-IA-A40X-01
+OV-TCGA-04-1371-01
+OV-TCGA-13-0725-01
+OV-TCGA-13-0751-01
+OV-TCGA-25-1319-01
+STAD-TCGA-D7-6518-01
+
+```
+re-generate pbs files for these 11 samples increasing walltime and memory for jobs.
+
+```bash
+##remove previous generated pbs file first
+
+rm *pbs
+
+comm -23 total_samples.txt finished_samples.txt | parallel find . -name {}.vcf.command | parallel './generate_pbs.sh -a {} -j {} -t 01:30:00 -m 16gb -c 6 -o a > {.}.pbs'
+
+for pbs in *pbs
+do
+      msub $pbs
+      sleep 2
+done
+
+```
 
 ### checking Low pass data
 
