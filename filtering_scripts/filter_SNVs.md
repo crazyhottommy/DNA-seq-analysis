@@ -118,6 +118,7 @@ find *speedseq*  -name "rln_cmd_1.sh" | sed -r 's/.+\/.+-(TCGA-[0-9A-Z]{2}-[0-9A
       1 TCGA-TQ-A7RK-02
 
 ```
+### filtering WGS SNV calls
 
 Filtering SNVs takes long time, I used HPC to do it. For this simple one command task, I generated 1050 command files,
 and then 1050 pbs files, and submit using a for loop. Sometimes, jobs fails, and it is a bit hard to follow which one failed.
