@@ -48,7 +48,7 @@ newname=$(echo $1 | sed -E 's/.+\/(.+-TCGA-[0-9A-Z]{2}-[0-9A-Z]{4}-[0-9]{2})-.+/
 #echo $newname
 cp $1 /rsrch1/genomic_med/mtang1/TCGA-WGS-SV/WGS/SVs_final/${newname}.sv.vcf.gz
 ```
-** there are SV calls not genotyped and those are in unzipped form**
+**there are SV calls not genotyped and those are in unzipped form**
 
 ```bash
 find *speedseq* -name '*sv.vcf'| parallel -j 6 ./change_name_vcf.sh {}
