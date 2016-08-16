@@ -264,7 +264,7 @@ re-generate pbs files for these 11 samples increasing walltime and memory for jo
 
 rm *pbs
 
-comm -23 total_samples.txt finished_samples.txt | parallel find . -name {}.vcf.command | parallel './generate_pbs.sh -a {} -j {} -t 01:30:00 -m 16gb -c 6 -o a > {.}.pbs'
+comm -23 total_samples.txt finished_samples.txt | parallel find . -name {}.vcf.command | parallel './generate_pbs.sh -a {} -j {} -t 03:30:00 -m 30gb -c 10 -o a > {.}.pbs'
 
 for pbs in *pbs
 do
