@@ -257,6 +257,24 @@ OV-TCGA-25-1319-01
 STAD-TCGA-D7-6518-01
 
 ```
+
+Indeed, the size of those files are big:
+
+```bash
+comm -23 total_samples.txt finished_samples.txt | parallel find . -name {}.vcf.gz | parallel ls -sh {}
+2.2G ./ESCA-TCGA-JY-A93C-01.vcf.gz
+2.6G ./GBM-TCGA-06-0145-01.vcf.gz
+3.4G ./GBM-TCGA-06-0185-01.vcf.gz
+3.4G ./OV-TCGA-04-1371-01.vcf.gz
+2.6G ./OV-TCGA-13-0751-01.vcf.gz
+4.7G ./OV-TCGA-25-1319-01.vcf.gz
+3.0G ./GBM-TCGA-06-0152-01.vcf.gz
+4.4G ./GBM-TCGA-06-0648-01.vcf.gz
+1.8G ./KIRP-TCGA-IA-A40X-01.vcf.gz
+3.4G ./OV-TCGA-13-0725-01.vcf.gz
+20M ./STAD-TCGA-D7-6518-01.vcf.gz
+
+```
 re-generate pbs files for these 11 samples increasing walltime and memory for jobs.
 
 ```bash
