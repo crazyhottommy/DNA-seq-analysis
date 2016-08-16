@@ -124,7 +124,7 @@ Filtering SNVs takes long time, I used HPC to do it. For this simple one command
 and then 1050 pbs files, and submit using a for loop. Sometimes, jobs fails, and it is a bit hard to follow which one failed.
 That's why a pipeline is important when dealing with thousands of files. `snakemake` is a good potential candidates for this task.
 
-[`filter_SNVs.sh`](https://github.com/crazyhottommy/DNA-seq-analysis/blob/master/filtering_scripts/filter_SNV.sh) is a wrapper for vawk written by me.
+[`filter_SNVs.sh`](https://github.com/crazyhottommy/DNA-seq-analysis/blob/master/filtering_scripts/filter_SNV.sh) is a wrapper for vawk written by me. I changed the default SCC cutoff to 40 and reads supporting the variants for normal samples <=2.
 
 ```bash
 find *gz | parallel 'echo ./filter_SNVs.sh {} > {}.command'
