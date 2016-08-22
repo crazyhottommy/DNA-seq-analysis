@@ -12,6 +12,9 @@ dbSNP IDs are not unique?
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Oh God, why are people still using dbSNP IDs as though they&#39;re unique identifiers?</p>&mdash; Daniel MacArthur (@dgmacarthur) <a href="https://twitter.com/dgmacarthur/status/758331620080422912">July 27, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+### Database 
+
+* [The ExAC Browser: Displaying reference data information from over 60,000 exomes](https://github.com/konradjk/exac_browser)
 
 ### Tips and lessons learned during my DNA-seq data analysis journey.  
 
