@@ -112,7 +112,7 @@ TCGA has all the variants calls in MAF format. Please read a [post](https://www.
 
 * [MUFFINN: cancer gene discovery via network analysis of somatic mutation data](http://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-0989-x?platform=hootsuite)
 
-### Tumor purity
+### Tumor purity and tumor clonality 
 * ESTIMATE
 * ABSOLUTE
 * THetA
@@ -123,6 +123,7 @@ TCGA has all the variants calls in MAF format. Please read a [post](https://www.
 * [A step-by-step guide to estimate tumor clonality/purity from variant allele frequency data](https://github.com/hammerlab/vaf-experiments)
 * [densityCut: an efficient and versatile topological approach for automatic clustering of biological data](http://m.bioinformatics.oxfordjournals.org/content/early/2016/04/23/bioinformatics.btw227.short?rss=1) can be used to cluster allel frequence.
 * [phyC: Clustering cancer evolutionary trees](http://biorxiv.org/content/early/2016/08/12/069302)
+* [CloneCNA](http://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-016-1174-7): detecting subclonal somatic copy number alterations in heterogeneous tumor samples from whole-exome sequencing data
 
 ### mutual exclusiveness of mutations
 * [MEGSA](http://biorxiv.org/content/early/2015/04/09/017731): A powerful and flexible framework for analyzing mutual exclusivity of tumor mutations.
