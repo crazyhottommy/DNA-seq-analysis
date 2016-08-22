@@ -2,7 +2,11 @@
 
 ### Databases for variants
 * [Disease Variant Store](https://rvs.u.hpc.mssm.edu/divas/)
-* 
+* [The ExAC Browser: Displaying reference data information from over 60,000 exomes](https://github.com/konradjk/exac_browser)
+
+**Important paper** [DNA damage is a major cause of sequencing errors, directly confounding variant identification](http://biorxiv.org/content/early/2016/08/19/070334)
+
+>However, in this study we show that false positive variants can account for more than 70% of identified somatic variations, rendering conventional detection methods inadequate for accurate determination of low allelic variants. Interestingly, these false positive variants primarily originate from mutagenic DNA damage which directly confounds determination of genuine somatic mutations. Furthermore, we developed and validated a simple metric to measure mutagenic DNA damage and demonstrated that mutagenic DNA damage is the leading cause of sequencing errors in widely-used resources including the **1000 Genomes Project** and **The Cancer Genome Atlas**.
 
 ### How to represent sequence variants
 [Sequence Variant Nomenclature from Human Genome Variation Society](http://varnomen.hgvs.org/)
@@ -12,9 +16,6 @@ dbSNP IDs are not unique?
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Oh God, why are people still using dbSNP IDs as though they&#39;re unique identifiers?</p>&mdash; Daniel MacArthur (@dgmacarthur) <a href="https://twitter.com/dgmacarthur/status/758331620080422912">July 27, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-### Database 
-
-* [The ExAC Browser: Displaying reference data information from over 60,000 exomes](https://github.com/konradjk/exac_browser)
 
 ### Tips and lessons learned during my DNA-seq data analysis journey.  
 
