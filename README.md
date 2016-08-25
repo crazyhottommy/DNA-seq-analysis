@@ -52,6 +52,10 @@ Also, read this [post](https://standage.github.io/on-genomic-interval-notation.h
 * [VarDict](https://github.com/AstraZeneca-NGS/VarDict): a novel and versatile variant caller for next-generation sequencing in cancer research. we demonstrated that VarDict has improved sensitivity over `Manta` and equivalent sensitivity to `Lumpy`. SNP call rates are on par with `MuTect`, and VarDict is more sensitive and precise than `Scalpel` and other callers for insertions and deletions. see a [post](http://bcb.io/2016/04/04/vardict-filtering/) by Brad Chapman. Looks very promising.
 * [Weaver: Allele-Specific Quantification of Structural Variations in Cancer Genomes](https://github.com/leofountain/Weaver). [Paper](http://biorxiv.org/content/early/2016/04/12/048207)
 
+### Third generation sequencing for Structural variants
+* [beautiful “Ribbon” viewer to visualize complicated SVs revealed by PacBio reads](http://genomeribbon.com/)
+* [Sniffles: Structural variation caller using third generation sequencing](https://github.com/fritzsedlazeck/Sniffles) is a structural variation caller using third generation sequencing (PacBio or Oxford Nanopore). It detects all types of SVs using evidence from split-read alignments, high-mismatch regions, and coverage analysis
+
 **A series of posts from Brad Chapman**  
 
 1. [Validating multiple cancer variant callers and prioritization in tumor-only samples](http://bcb.io/2015/03/05/cancerval/)  
