@@ -53,7 +53,7 @@ Also, read this [post](https://standage.github.io/on-genomic-interval-notation.h
 * [Weaver: Allele-Specific Quantification of Structural Variations in Cancer Genomes](https://github.com/leofountain/Weaver). [Paper](http://biorxiv.org/content/early/2016/04/12/048207)
 
 ### Third generation sequencing for Structural variants
-* [beautiful “Ribbon” viewer to visualize complicated SVs revealed by PacBio reads](http://genomeribbon.com/)
+* [beautiful “Ribbon” viewer to visualize complicated SVs revealed by PacBio reads](http://genomeribbon.com/) [github page](https://github.com/MariaNattestad/ribbon)
 * [Sniffles: Structural variation caller using third generation sequencing](https://github.com/fritzsedlazeck/Sniffles) is a structural variation caller using third generation sequencing (PacBio or Oxford Nanopore). It detects all types of SVs using evidence from split-read alignments, high-mismatch regions, and coverage analysis
 
 **A series of posts from Brad Chapman**  
