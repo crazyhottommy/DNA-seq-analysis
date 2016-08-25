@@ -115,7 +115,11 @@ TCGA has all the variants calls in MAF format. Please read a [post](https://www.
 ### Tumor purity and tumor clonality 
 * ESTIMATE
 * ABSOLUTE
-* THetA
+* [THetA: Tumor Heterogeneity Analysis](http://compbio.cs.brown.edu/projects/theta/) is an algorithm that estimates the tumor purity and clonal/sublconal copy number aberrations directly from high-throughput DNA sequencing data. The latest release is called THetA2 and includes a number of improvements over previous versions.
+* [CIBERSORT](https://cibersort.stanford.edu/index.php) is an analytical tool developed by Newman et al. to provide an estimation of the abundances of member cell types in a mixed cell population, using gene expression data
+* [paper: Digitally deconvolving the tumor microenvironment](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1036-7?utm_content=buffer45a4c&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer)
+* [Comprehensive analyses of tumor immunity: implications for cancer immunotherapy](http://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1028-7?platform=hootsuite) by Shierly Liu's lab. [TIMER](http://cistrome.org/TIMER/): Tumor IMmune Estimation Resource
+A comprehensive resource for the clinical relevance of tumor-immune infiltrations
 * [Reference-free deconvolution of DNA methylation data and mediation by cell composition effects](http://biorxiv.org/content/early/2016/01/22/037671)
 * [paper: Toward understanding and exploiting tumor heterogeneity](http://www.ncbi.nlm.nih.gov/pubmed/26248267)  
 * [paper: The prognostic landscape of genes and infiltrating immune cells across human cancers](http://www.ncbi.nlm.nih.gov/pubmed/26193342)  from Alizadeh lab.
@@ -124,6 +128,7 @@ TCGA has all the variants calls in MAF format. Please read a [post](https://www.
 * [densityCut: an efficient and versatile topological approach for automatic clustering of biological data](http://m.bioinformatics.oxfordjournals.org/content/early/2016/04/23/bioinformatics.btw227.short?rss=1) can be used to cluster allel frequence.
 * [phyC: Clustering cancer evolutionary trees](http://biorxiv.org/content/early/2016/08/12/069302)
 * [CloneCNA](http://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-016-1174-7): detecting subclonal somatic copy number alterations in heterogeneous tumor samples from whole-exome sequencing data
+* 
 
 ### mutual exclusiveness of mutations
 * [MEGSA](http://biorxiv.org/content/early/2015/04/09/017731): A powerful and flexible framework for analyzing mutual exclusivity of tumor mutations.
