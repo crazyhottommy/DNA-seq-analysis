@@ -136,6 +136,8 @@ A comprehensive resource for the clinical relevance of tumor-immune infiltration
 * [CloneCNA](http://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-016-1174-7): detecting subclonal somatic copy number alterations in heterogeneous tumor samples from whole-exome sequencing data
 * [paper: Distinct evolution and dynamics of epigenetic and genetic heterogeneity in acute myeloid leukemia](http://www.nature.com/nm/journal/v22/n7/full/nm.4125.html)
 * [paper: Visualizing Clonal Evolution in Cancer](http://www.cell.com/molecular-cell/pdf/S1097-2765(16)30188-5.pdf)
+* [An R package for inferring the subclonal architecture of tumors:sciclone](https://github.com/genome/sciclone)
+* 
 * [Inferring and visualizing clonal evolution in multi-sample cancer sequencing: clonevol](https://github.com/hdng/clonevol)
 * [fishplot: Create timecourse "fish plots" that show changes in the clonal architecture of tumors](https://github.com/chrisamiller/fishplot)
 
