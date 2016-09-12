@@ -58,9 +58,10 @@ Also, read this [post](https://standage.github.io/on-genomic-interval-notation.h
 *[paper: Using high-resolution variant frequencies to empower clinical genome interpretation](http://biorxiv.org/content/early/2016/09/02/073114) [shiny App](https://jamesware.shinyapps.io/alleleFrequencyApp/)  
 >Whole exome and genome sequencing have transformed the discovery of genetic variants that cause human Mendelian disease, but discriminating pathogenic from benign variants remains a daunting challenge. Rarity is recognised as a necessary, although not sufficient, criterion for pathogenicity, but frequency cutoffs used in Mendelian analysis are often arbitrary and overly lenient. Recent very large reference datasets, such as the Exome Aggregation Consortium (ExAC), provide an unprecedented opportunity to obtain robust frequency estimates even for very rare variants. Here we present a statistical framework for the frequency-based filtering of candidate disease-causing variants, accounting for disease prevalence, genetic and allelic heterogeneity, inheritance mode, penetrance, and sampling variance in reference datasets.
 
-### Third generation sequencing for Structural variants
+### Third generation sequencing for Structural variants (works on short reads as well!)
 * [beautiful “Ribbon” viewer to visualize complicated SVs revealed by PacBio reads](http://genomeribbon.com/) [github page](https://github.com/MariaNattestad/ribbon)
-* [Sniffles: Structural variation caller using third generation sequencing](https://github.com/fritzsedlazeck/Sniffles) is a structural variation caller using third generation sequencing (PacBio or Oxford Nanopore). It detects all types of SVs using evidence from split-read alignments, high-mismatch regions, and coverage analysis
+* [Sniffles: Structural variation caller using third generation sequencing](https://github.com/fritzsedlazeck/Sniffles) is a structural variation caller using third generation sequencing (PacBio or Oxford Nanopore). It detects all types of SVs using evidence from split-read alignments, high-mismatch regions, and coverage analysis.
+* [splitThreader](http://splitthreader.com/) for visualizing structural variants. Finally a good visualizer!
 
 **A series of posts from Brad Chapman**  
 
