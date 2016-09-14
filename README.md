@@ -16,6 +16,16 @@ dbSNP IDs are not unique?
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Oh God, why are people still using dbSNP IDs as though they&#39;re unique identifiers?</p>&mdash; Daniel MacArthur (@dgmacarthur) <a href="https://twitter.com/dgmacarthur/status/758331620080422912">July 27, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+#### The Evolving Utility of dbSNP 
+
+see a [post:dbSNP (build 147) exceeds a ridiculous 150 million variants](http://massgenomics.org/2016/09/dbsnp-ridiculous-variants.html)
+
+>In the early days of next-generation sequencing, dbSNP provided a vital discriminatory tool. In exome sequencing studies of Mendelian disorders, any variant already present in dbSNP was usually common, and therefore unlikely to cause rare genetic diseases. Some of the first high-profile disease gene studies therefore used dbSNP as a filter. Similarly, in cancer genomics, a candidate somatic mutation observed at the position of a known polymorphism typically indicated a germline variant that was under-called in the normal sample. Again, dbSNP provided an important filter.
+
+>Now, **the presence or absence of a variant in dbSNP carries very little meaning.** The database includes over 100,000 variants from disease mutation databases such as OMIM or HGMD. It also contains some appreciable number of somatic mutations that were submitted there before databases like COSMIC became available. And, like any biological database, dbSNP undoubtedly includes false positives.
+
+>Thus, while the mere presence of a variant in dbSNP is a blunt tool for variant filtering, dbSNP’s deep allele frequency data make it incredibly powerful for genetics studies: it can rule out variants that are too prevalent to be disease-causing, and prioritize ones that are rarely observed in human populations. This discriminatory power will only increase as ambitious large-scale sequencing projects like CCDG make their data publicly available.
+
 
 ### Tips and lessons learned during my DNA-seq data analysis journey.  
 
