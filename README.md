@@ -147,7 +147,6 @@ A comprehensive resource for the clinical relevance of tumor-immune infiltration
 * [paper: Toward understanding and exploiting tumor heterogeneity](http://www.ncbi.nlm.nih.gov/pubmed/26248267)  
 * [paper: The prognostic landscape of genes and infiltrating immune cells across human cancers](http://www.ncbi.nlm.nih.gov/pubmed/26193342)  from Alizadeh lab.
 * [Robust enumeration of cell subsets from tissue expression profiles](http://www.nature.com/nmeth/journal/v12/n5/abs/nmeth.3337.html)  from Alizadeh lab, and the [CIBERSORT tool](https://cibersort.stanford.edu/index.php) 
-
 ### tumor colonality and evolution
 * [A step-by-step guide to estimate tumor clonality/purity from variant allele frequency data](https://github.com/hammerlab/vaf-experiments)
 * [densityCut: an efficient and versatile topological approach for automatic clustering of biological data](http://m.bioinformatics.oxfordjournals.org/content/early/2016/04/23/bioinformatics.btw227.short?rss=1) can be used to cluster allel frequence.
@@ -156,9 +155,10 @@ A comprehensive resource for the clinical relevance of tumor-immune infiltration
 * [paper: Distinct evolution and dynamics of epigenetic and genetic heterogeneity in acute myeloid leukemia](http://www.nature.com/nm/journal/v22/n7/full/nm.4125.html)
 * [paper: Visualizing Clonal Evolution in Cancer](http://www.cell.com/molecular-cell/pdf/S1097-2765(16)30188-5.pdf)
 * [An R package for inferring the subclonal architecture of tumors:sciclone](https://github.com/genome/sciclone)
-* 
 * [Inferring and visualizing clonal evolution in multi-sample cancer sequencing: clonevol](https://github.com/hdng/clonevol)
 * [fishplot: Create timecourse "fish plots" that show changes in the clonal architecture of tumors](https://github.com/chrisamiller/fishplot)
+
+
 
 ### mutual exclusiveness of mutations
 * [MEGSA](http://biorxiv.org/content/early/2015/04/09/017731): A powerful and flexible framework for analyzing mutual exclusivity of tumor mutations.
