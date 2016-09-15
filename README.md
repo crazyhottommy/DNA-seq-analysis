@@ -88,6 +88,7 @@ Also, read this [post](https://standage.github.io/on-genomic-interval-notation.h
 * [paper: Computational tools for copy number variation (CNV) detection using next-generation sequencing data: features and perspectives](http://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-14-S11-S1)
 * [bioconductor copy number work flow](https://www.bioconductor.org/help/course-materials/2014/SeattleOct2014/B02.2.3_CopyNumber.html)
 * [paper: Assessing the reproducibility of exome copy number variations predictions](http://www.ncbi.nlm.nih.gov/pubmed/27503473?dopt=Abstract&utm_source=dlvr.it&utm_medium=twitter)
+* [CNVkit](https://github.com/etal/cnvkit) A command-line toolkit and Python library for detecting copy number variants and alterations genome-wide from targeted DNA sequencing.
 
 ### Tools for visulization 
 1. [New app gene.iobio](http://iobio.io/)  
