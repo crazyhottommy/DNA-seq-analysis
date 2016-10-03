@@ -65,7 +65,7 @@ Also, read this [post](https://standage.github.io/on-genomic-interval-notation.h
 
 ### SNV filtering
 
-*[paper: Using high-resolution variant frequencies to empower clinical genome interpretation](http://biorxiv.org/content/early/2016/09/02/073114) [shiny App](https://jamesware.shinyapps.io/alleleFrequencyApp/)  
+* [paper: Using high-resolution variant frequencies to empower clinical genome interpretation](http://biorxiv.org/content/early/2016/09/02/073114) [shiny App](https://jamesware.shinyapps.io/alleleFrequencyApp/)  
 >Whole exome and genome sequencing have transformed the discovery of genetic variants that cause human Mendelian disease, but discriminating pathogenic from benign variants remains a daunting challenge. Rarity is recognised as a necessary, although not sufficient, criterion for pathogenicity, but frequency cutoffs used in Mendelian analysis are often arbitrary and overly lenient. Recent very large reference datasets, such as the Exome Aggregation Consortium (ExAC), provide an unprecedented opportunity to obtain robust frequency estimates even for very rare variants. Here we present a statistical framework for the frequency-based filtering of candidate disease-causing variants, accounting for disease prevalence, genetic and allelic heterogeneity, inheritance mode, penetrance, and sampling variance in reference datasets.
 
 * a new database called [dbDSM](http://bioinfo.ahu.edu.cn:8080/dbDSM/index.jsp)
