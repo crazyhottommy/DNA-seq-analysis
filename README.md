@@ -72,6 +72,8 @@ Also, read this [post](https://standage.github.io/on-genomic-interval-notation.h
 * a new database called [dbDSM](http://bioinfo.ahu.edu.cn:8080/dbDSM/index.jsp)
 A database of Deleterious Synonymous Mutation, a continually updated database that collects, curates and manages available human disease-related SM data obtained from published literature.
 
+* [LncVar](http://bioinfo.ibp.ac.cn/LncVar/): a database of genetic variation associated with long non-coding genes
+
 ### Third generation sequencing for Structural variants (works on short reads as well!)
 * [beautiful “Ribbon” viewer to visualize complicated SVs revealed by PacBio reads](http://genomeribbon.com/) [github page](https://github.com/MariaNattestad/ribbon)
 * [Sniffles: Structural variation caller using third generation sequencing](https://github.com/fritzsedlazeck/Sniffles) is a structural variation caller using third generation sequencing (PacBio or Oxford Nanopore). It detects all types of SVs using evidence from split-read alignments, high-mismatch regions, and coverage analysis.
