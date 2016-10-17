@@ -166,7 +166,8 @@ A comprehensive resource for the clinical relevance of tumor-immune infiltration
 * [Inferring and visualizing clonal evolution in multi-sample cancer sequencing: clonevol](https://github.com/hdng/clonevol)
 * [fishplot: Create timecourse "fish plots" that show changes in the clonal architecture of tumors](https://github.com/chrisamiller/fishplot)
 * [tools from OMICS tools website](https://omictools.com/tumor-purity-and-heterogeneity-category)
-* [PhyloWGS](https://github.com/morrislab/phylowgs): Reconstructing subclonal composition and evolution from whole-genome sequencing of tumors
+* [PhyloWGS](https://github.com/morrislab/phylowgs): Reconstructing subclonal composition and evolution from whole-genome sequencing of tumors.
+* [SCHISM](http://karchinlab.org/apps/appSchism.html) SubClonal Hierarchy Inference from Somatic Mutation
 
 
 
