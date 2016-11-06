@@ -100,6 +100,8 @@ A database of Deleterious Synonymous Mutation, a continually updated database th
 1. [New app gene.iobio](http://iobio.io/)  
 [App here](http://gene.iobio.io/?rel0=proband&rel1=mother&rel2=father) I will definetely have it a try.
 
+2. [ASCIIGenome](https://github.com/dariober/ASCIIGenome) is a command-line genome browser running from terminal window and solely based on ASCII characters. Since ASCIIGenome does not require a graphical interface it is particularly useful for quickly visualizing genomic data on remote servers. The idea is to make ASCIIGenome the Vim of genome viewers.
+
 ### Tools for vcf files
 1. [tools for pedigree files](https://github.com/brentp/peddy). It can determine sex from PED and VCF files. Developed by Brent Pedersen. I really like tools from Aaron Quinlan's lab.
 2. [cyvcf2](https://github.com/brentp/cyvcf2) is a cython wrapper around htslib built for fast parsing of Variant Call Format (VCF) files
