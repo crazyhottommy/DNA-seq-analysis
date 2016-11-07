@@ -113,6 +113,12 @@ A database of Deleterious Synonymous Mutation, a continually updated database th
 7. [vcf-validator](https://github.com/EBIvariation/vcf-validator) validate your VCF files!
 8. [BrowseVCF](https://github.com/BSGOxford/BrowseVCF): a web-based application and workflow to quickly prioritize disease-causative variants in VCF files
 
+### mutation signature
+
+* [signeR](http://bioconductor.org/packages/release/bioc/html/signeR.html)
+* [deconstructSigs](https://github.com/raerose01/deconstructSigs)
+* [MutationalPatterns](https://github.com/CuppenResearch/MutationalPatterns)
+
 ### Tools for MAF files
 TCGA has all the variants calls in MAF format. Please read a [post](https://www.biostars.org/p/69222/) by Cyriac Kandoth. 
 
