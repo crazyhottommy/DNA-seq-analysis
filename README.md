@@ -44,7 +44,10 @@ see a [post:dbSNP (build 147) exceeds a ridiculous 150 million variants](http://
 
 credit from Vince Buffalo.
 Also, read this [post](https://standage.github.io/on-genomic-interval-notation.html) and this [post](https://www.biostars.org/p/84686/)  
+![](https://cloud.githubusercontent.com/assets/4106146/21367352/77371b1e-c6c3-11e6-9843-8dc9812fce3b.png)
+![](https://cloud.githubusercontent.com/assets/4106146/21367351/7736fc38-c6c3-11e6-9382-59a9a8e14b7a.png)
 
+Also read [The UCSC Genome Browser Coordinate Counting Systems](http://genome.ucsc.edu/blog/the-ucsc-genome-browser-coordinate-counting-systems/)
 
 ### Mutation caller, structural variant caller
 
