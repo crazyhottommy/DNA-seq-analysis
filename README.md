@@ -143,7 +143,7 @@ TCGA has all the variants calls in MAF format. Please read a [post](https://www.
 
 ### Plotting
 1.[oncoprint](https://bioconductor.org/packages/release/bioc/vignettes/ComplexHeatmap/inst/doc/s8.oncoprint.html)
-2. [deconstructSigs](https://github.com/raerose01/deconstructSigs) aims to determine the contribution of known mutational processes to a tumor sample. By using deconstructSigs, one can: Determine the weights of each mutational signature contributing to an individual tumor sample; Plot the reconstructed mutational profile (using the calculated weights) and compare to the original input sample
+2.[deconstructSigs](https://github.com/raerose01/deconstructSigs) aims to determine the contribution of known mutational processes to a tumor sample. By using deconstructSigs, one can: Determine the weights of each mutational signature contributing to an individual tumor sample; Plot the reconstructed mutational profile (using the calculated weights) and compare to the original input sample
 3. [Fast Principal Component Analysis of Large-Scale Genome-Wide Data](https://github.com/gabraham/flashpca)
 
 ### Identify driver genes
@@ -178,11 +178,10 @@ A comprehensive resource for the clinical relevance of tumor-immune infiltration
 * [PhyloWGS](https://github.com/morrislab/phylowgs): Reconstructing subclonal composition and evolution from whole-genome sequencing of tumors.
 * [SCHISM](http://karchinlab.org/apps/appSchism.html) SubClonal Hierarchy Inference from Somatic Mutation
 
-
-
 ### mutual exclusiveness of mutations
 * [MEGSA](http://biorxiv.org/content/early/2015/04/09/017731): A powerful and flexible framework for analyzing mutual exclusivity of tumor mutations.
-* [CoMet](https://github.com/raphael-group/comet)  
+* [CoMet](https://github.com/raphael-group/comet) 
+* [DISCOVER](https://github.com/NKI-CCB/DISCOVER) co-occurrence and mutual exclusivity analysis for cancer genomics data.
 
 ### mutation enrich in pathways
 *[PathScore: a web tool for identifying altered pathways in cancer data](http://pathscore.publichealth.yale.edu/)
