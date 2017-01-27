@@ -82,6 +82,7 @@ A database of Deleterious Synonymous Mutation, a continually updated database th
 * [beautiful “Ribbon” viewer to visualize complicated SVs revealed by PacBio reads](http://genomeribbon.com/) [github page](https://github.com/MariaNattestad/ribbon)
 * [Sniffles: Structural variation caller using third generation sequencing](https://github.com/fritzsedlazeck/Sniffles) is a structural variation caller using third generation sequencing (PacBio or Oxford Nanopore). It detects all types of SVs using evidence from split-read alignments, high-mismatch regions, and coverage analysis.
 * [splitThreader](http://splitthreader.com/) for visualizing structural variants. Finally a good visualizer!
+* [New Genome Browser (NGB)](https://github.com/epam/NGB) - a Web - based NGS data viewer with unique Structural Variations (SVs) visualization capabilities, high performance, scalability, and cloud data support. Looks very promising.
 
 **A series of posts from Brad Chapman**  
 
