@@ -84,6 +84,14 @@ A database of Deleterious Synonymous Mutation, a continually updated database th
 * [splitThreader](http://splitthreader.com/) for visualizing structural variants. Finally a good visualizer!
 * [New Genome Browser (NGB)](https://github.com/epam/NGB) - a Web - based NGS data viewer with unique Structural Variations (SVs) visualization capabilities, high performance, scalability, and cloud data support. Looks very promising.
 
+### tools useful for everyday bioinformatics
+
+* [bedtools](http://bedtools.readthedocs.io/en/latest/index.html) one must know how to use it!
+* [bedops](https://bedops.readthedocs.io/en/latest/) useful as bedtools.
+* [InteractionSet](https://bioconductor.org/packages/release/bioc/html/InteractionSet.html) useful for Hi-C, ChIA-PET. I used it for [Breakpoints clustering for structural variants](http://crazyhottommy.blogspot.com/2016/03/breakpoints-clustering-for-structural.html)
+* [Paired Genomic Loci Tool Suite](https://github.com/billgreenwald/pgltools) `gpltools intersect` can do breakpoint merging.
+* [svtools](https://github.com/hall-lab/svtools) Tools for processing and analyzing structural variants.
+
 **A series of posts from Brad Chapman**  
 
 1. [Validating multiple cancer variant callers and prioritization in tumor-only samples](http://bcb.io/2015/03/05/cancerval/)  
