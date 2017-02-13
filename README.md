@@ -162,7 +162,7 @@ TCGA has all the variants calls in MAF format. Please read a [post](https://www.
 
 * [MUFFINN: cancer gene discovery via network analysis of somatic mutation data](http://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-0989-x?platform=hootsuite)
 
-### Tumor purity 
+### intra-Tumor heterogenity 
 * ESTIMATE
 * ABSOLUTE
 * [THetA: Tumor Heterogeneity Analysis](http://compbio.cs.brown.edu/projects/theta/) is an algorithm that estimates the tumor purity and clonal/sublconal copy number aberrations directly from high-throughput DNA sequencing data. The latest release is called THetA2 and includes a number of improvements over previous versions.
@@ -174,6 +174,9 @@ A comprehensive resource for the clinical relevance of tumor-immune infiltration
 * [paper: Toward understanding and exploiting tumor heterogeneity](http://www.ncbi.nlm.nih.gov/pubmed/26248267)  
 * [paper: The prognostic landscape of genes and infiltrating immune cells across human cancers](http://www.ncbi.nlm.nih.gov/pubmed/26193342)  from Alizadeh lab.
 * [Robust enumeration of cell subsets from tissue expression profiles](http://www.nature.com/nmeth/journal/v12/n5/abs/nmeth.3337.html)  from Alizadeh lab, and the [CIBERSORT tool](https://cibersort.stanford.edu/index.php) 
+* [A series of posts on tumor evolution](https://scientificbsides.wordpress.com/2014/06/02/inferring-tumour-evolution-1-the-intra-tumour-phylogeny-problem/)
+* [mapscape bioc package](http://bioconductor.org/packages/devel/bioc/html/mapscape.html) MapScape integrates clonal prevalence, clonal hierarchy, anatomic and mutational information to provide interactive visualization of spatial clonal evolution.
+* [cellscape bioc package](http://bioconductor.org/packages/devel/bioc/html/cellscape.html) Explores single cell copy number profiles in the context of a single cell tree
 
 ### tumor colonality and evolution
 
