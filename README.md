@@ -60,6 +60,12 @@ Also read [The UCSC Genome Browser Coordinate Counting Systems](http://genome.uc
 * [wham](https://github.com/zeeev/wham)
 * [SV-Bay](https://github.com/InstitutCurie/SV-Bay )  
 * [Delly](https://github.com/tobiasrausch/delly)
+* [Delly2](https://github.com/dellytools/delly)
+>Delly is the best sv caller in the DREAM challenge
+https://www.synapse.org/#!Synapse:syn312572/wiki/70726
+
+*[SV caller benchmark](http://shiny.wehi.edu.au/cameron.d/sv_benchmark)*
+
 * [COSMOS](http://seselab.org/cosmos/): Somatic Large Structural Variation Detector
 * Fusion And Chromosomal Translocation Enumeration and Recovery Algorithm [(FACTERA)](https://factera.stanford.edu/)  
 * [VarDict](https://github.com/AstraZeneca-NGS/VarDict): a novel and versatile variant caller for next-generation sequencing in cancer research. we demonstrated that VarDict has improved sensitivity over `Manta` and equivalent sensitivity to `Lumpy`. SNP call rates are on par with `MuTect`, and VarDict is more sensitive and precise than `Scalpel` and other callers for insertions and deletions. see a [post](http://bcb.io/2016/04/04/vardict-filtering/) by Brad Chapman. Looks very promising.
