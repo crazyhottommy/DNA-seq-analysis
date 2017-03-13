@@ -174,6 +174,7 @@ TCGA has all the variants calls in MAF format. Please read a [post](https://www.
 * ABSOLUTE
 * [THetA: Tumor Heterogeneity Analysis](http://compbio.cs.brown.edu/projects/theta/) is an algorithm that estimates the tumor purity and clonal/sublconal copy number aberrations directly from high-throughput DNA sequencing data. The latest release is called THetA2 and includes a number of improvements over previous versions.
 * [CIBERSORT](https://cibersort.stanford.edu/index.php) is an analytical tool developed by Newman et al. to provide an estimation of the abundances of member cell types in a mixed cell population, using gene expression data
+* [xcell](http://xcell.ucsf.edu/) is a webtool that performs cell type enrichment analysis from gene expression data for 64 immune and stroma cell types. xCell is a gene signatures-based method learned from thousands of pure cell types from various sources.  
 * [paper: Digitally deconvolving the tumor microenvironment](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1036-7?utm_content=buffer45a4c&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer)
 * [Comprehensive analyses of tumor immunity: implications for cancer immunotherapy](http://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1028-7?platform=hootsuite) by Shierly Liu's lab. [TIMER](http://cistrome.org/TIMER/): Tumor IMmune Estimation Resource
 A comprehensive resource for the clinical relevance of tumor-immune infiltrations
