@@ -95,6 +95,7 @@ A database of Deleterious Synonymous Mutation, a continually updated database th
 * [bedtools](http://bedtools.readthedocs.io/en/latest/index.html) one must know how to use it!
 * [bedops](https://bedops.readthedocs.io/en/latest/) useful as bedtools.
 * [valr](http://rnabioco.github.io/valr/) provides tools to read and manipulate genome intervals and signals. (dplyr friendly!)
+* [tidygenomics](https://github.com/Artjom-Metro/tidygenomics) similar to GRanges but operate on dataframes!
 * [InteractionSet](https://bioconductor.org/packages/release/bioc/html/InteractionSet.html) useful for Hi-C, ChIA-PET. I used it for [Breakpoints clustering for structural variants](http://crazyhottommy.blogspot.com/2016/03/breakpoints-clustering-for-structural.html)
 * [Paired Genomic Loci Tool Suite](https://github.com/billgreenwald/pgltools) `gpltools intersect` can do breakpoint merging.
 * [svtools](https://github.com/hall-lab/svtools) Tools for processing and analyzing structural variants.
