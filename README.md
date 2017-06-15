@@ -99,6 +99,7 @@ A database of Deleterious Synonymous Mutation, a continually updated database th
 * [InteractionSet](https://bioconductor.org/packages/release/bioc/html/InteractionSet.html) useful for Hi-C, ChIA-PET. I used it for [Breakpoints clustering for structural variants](http://crazyhottommy.blogspot.com/2016/03/breakpoints-clustering-for-structural.html)
 * [Paired Genomic Loci Tool Suite](https://github.com/billgreenwald/pgltools) `gpltools intersect` can do breakpoint merging.
 * [svtools](https://github.com/hall-lab/svtools) Tools for processing and analyzing structural variants.
+* [Teaser](https://github.com/Cibiv/Teaser) A tool to benchmark mappers and different parameters within minutes.
 
 **A series of posts from Brad Chapman**  
 
