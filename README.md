@@ -84,6 +84,14 @@ A database of Deleterious Synonymous Mutation, a continually updated database th
 
 * [LncVar](http://bioinfo.ibp.ac.cn/LncVar/): a database of genetic variation associated with long non-coding genes
 
+### Annotation of the variants
+
+* VEP
+* ANNOVAR
+* VCFanno
+* [Personal Cancer Genome Reporter (PCGR)](https://github.com/sigven/pcgr)
+* [awesome-cancer-variant-databases](https://github.com/seandavi/awesome-cancer-variant-databases)
+
 ### Third generation sequencing for Structural variants (works on short reads as well!)
 * [beautiful “Ribbon” viewer to visualize complicated SVs revealed by PacBio reads](http://genomeribbon.com/) [github page](https://github.com/MariaNattestad/ribbon)
 * [Sniffles: Structural variation caller using third generation sequencing](https://github.com/fritzsedlazeck/Sniffles) is a structural variation caller using third generation sequencing (PacBio or Oxford Nanopore). It detects all types of SVs using evidence from split-read alignments, high-mismatch regions, and coverage analysis.
