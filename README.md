@@ -29,8 +29,8 @@ see a [post:dbSNP (build 147) exceeds a ridiculous 150 million variants](http://
 
 ### Tips and lessons learned during my DNA-seq data analysis journey.  
 
-1. [Allel frequency](https://en.wikipedia.org/wiki/Allele_frequency)  
-  Allele frequency, or gene frequency, is the proportion of a particular allele (variant of a gene) among all allele copies       being considered. It can be formally defined as the percentage of all alleles at a given locus on a chromosome in a population   gene pool represented by a particular allele.
+1. [Allel frequency(AF)](https://en.wikipedia.org/wiki/Allele_frequency)  
+  Allele frequency, or gene frequency, is the proportion of a particular allele (variant of a gene) among all allele copies       being considered. It can be formally defined as the percentage of all alleles at a given locus on a chromosome in a population   gene pool represented by a particular allele. AF is affected by copy-number variation, which is common for cancers. tools such as pyclone take tumor purity and copy-number data into account to calculate Cancer Cell Fraction (CCFs).
 
 2. "for SNVs, we are interested in genotype 0/1, 1/1 for tumor and 0/0 for normal. 1/1 genotype is very rare.  
    It requires the same mutation occurs at the same place in two sister chromsomes which is very rare. one possible way to get 
