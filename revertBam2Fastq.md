@@ -100,3 +100,33 @@ read this post http://www.nxn.se/valent/2017/12/6/low-mapping-rate-6-converting-
 >samtools fastq requires the bam files sort by name   
 
 >samtools collate is your friend
+
+What I am using for my snakemake pipeline https://gitlab.com/tangming2005/snakemake_DNAseq_pipeline/blob/multiRG/Snakefile
+
+```python
+if not config["from_fastq"]:
+    if config["realign"]:
+        rule realign:
+            input: get_input_files
+            output: temp(["01aln_temp/{sample}.RG{id}.bam", "01aln_temp/{sample}.RG{id}.bam.bai"]), "00log/{sample}.RG{id}.align"
+            log:
+                bwa = "00log/{sample}.RG{id}.align"
+            params:
+                jobname = "{sample}_RG{id}",
+                ## add read group for bwa mem mapping, change accordingly if you know PL:ILLUMINA, LB:library1 PI:200 etc...
+                ## http://snakemake.readthedocs.io/en/stable/snakefiles/rules.html#non-file-parameters-for-rules
+                rg = identify_read_groups,
+                ID = identify_read_groups_ID
+            message: "converting {input} file with read group {params.ID} to fastqs by bedtools and remapping with bwa mem"
+            threads: 8
+            shell:
+                """
+                samtools view -br {params.ID} {input} \
+                | samtools sort -n -l 1 -@ 8 -m 2G -T 01aln_temp/{wildcards.sample}_{wildcards.id}.tmp \
+                | bedtools bamtofastq -i /dev/stdin -fq /dev/stdout -fq2 /dev/stdout \
+                | bwa mem -t 8 -p  -M -v 1 -R '{params.rg}' {config[ref_fa]} - 2> {log.bwa} \
+                | samtools sort -m 2G -@ 8 -T {output[0]}.tmp -o {output[0]}
+                samtools index {output[0]}
+                """
+
+```
