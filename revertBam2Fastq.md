@@ -94,3 +94,8 @@ EAS139_46:3:75:1326:2391    35  1   1   0   51M =   12  62  TAACCCTAACCCTAACCCTA
 #### some bam files contain reads from different read groups. one needs to convert the bam to different fastqs for each read group respectively and then realign each with bwa mem. Lastly, merge all the sorted bam together to get a realigned bam.
 
 #### Check out HengLi's [bwakit](https://github.com/lh3/bwa/tree/master/bwakit)
+
+read this post http://www.nxn.se/valent/2017/12/6/low-mapping-rate-6-converting-sorted-bam-to-fastq
+
+>samtools fastq requires the bam files sort by name 
+>samtools collate is your friend
