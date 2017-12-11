@@ -97,5 +97,6 @@ EAS139_46:3:75:1326:2391    35  1   1   0   51M =   12  62  TAACCCTAACCCTAACCCTA
 
 read this post http://www.nxn.se/valent/2017/12/6/low-mapping-rate-6-converting-sorted-bam-to-fastq
 
->samtools fastq requires the bam files sort by name 
+>samtools fastq requires the bam files sort by name   
+
 >samtools collate is your friend
