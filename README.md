@@ -8,6 +8,9 @@
 
 >However, in this study we show that false positive variants can account for more than 70% of identified somatic variations, rendering conventional detection methods inadequate for accurate determination of low allelic variants. Interestingly, these false positive variants primarily originate from mutagenic DNA damage which directly confounds determination of genuine somatic mutations. Furthermore, we developed and validated a simple metric to measure mutagenic DNA damage and demonstrated that mutagenic DNA damage is the leading cause of sequencing errors in widely-used resources including the **1000 Genomes Project** and **The Cancer Genome Atlas**.
 
+[Functional equivalence of genome sequencing analysis pipelines enables harmonized variant calling across human genetics projects](https://www.biorxiv.org/content/early/2018/02/22/269316) 
+
+
 ### How to represent sequence variants
 [Sequence Variant Nomenclature from Human Genome Variation Society](http://varnomen.hgvs.org/)
 
