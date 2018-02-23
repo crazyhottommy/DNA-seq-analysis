@@ -95,6 +95,12 @@ A database of Deleterious Synonymous Mutation, a continually updated database th
 * [Personal Cancer Genome Reporter (PCGR)](https://github.com/sigven/pcgr)
 * [awesome-cancer-variant-databases](https://github.com/seandavi/awesome-cancer-variant-databases)
 
+### Mannual review of the variants called by IGV
+
+* [Standard operating procedure for somatic variant refinement of tumor sequencing data](https://www.biorxiv.org/content/early/2018/02/21/266262) 
+
+* [Variant Review with the Integrative Genomics Viewer(https://www.ncbi.nlm.nih.gov/pubmed/29092934)
+
 ### Third generation sequencing for Structural variants (works on short reads as well!)
 * [beautiful “Ribbon” viewer to visualize complicated SVs revealed by PacBio reads](http://genomeribbon.com/) [github page](https://github.com/MariaNattestad/ribbon)
 * [Sniffles: Structural variation caller using third generation sequencing](https://github.com/fritzsedlazeck/Sniffles) is a structural variation caller using third generation sequencing (PacBio or Oxford Nanopore). It detects all types of SVs using evidence from split-read alignments, high-mismatch regions, and coverage analysis.
