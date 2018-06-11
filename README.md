@@ -244,4 +244,4 @@ A comprehensive resource for the clinical relevance of tumor-immune infiltration
 
 * A review paper 2016: [Single-cell genome sequencing:current state of the science](http://www.nature.com/nrg/journal/v17/n3/abs/nrg.2015.16.html) 
 * [Monovar](http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.3835.html): single-nucleotide variant detection in single cells
-
+* [R2C2: Improving nanopore read accuracy enables the sequencing of highly-multiplexed full-length single-cell cDNA](https://www.biorxiv.org/content/early/2018/06/04/338020)
