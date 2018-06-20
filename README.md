@@ -3,6 +3,7 @@
 ### Databases for variants
 * [Disease Variant Store](https://rvs.u.hpc.mssm.edu/divas/)
 * [The ExAC Browser: Displaying reference data information from over 60,000 exomes](https://github.com/konradjk/exac_browser)
+* [Pathogenic Germline Variants in 10,389 Adult Cancers](https://www.cell.com/cell/fulltext/S0092-8674(18)30363-5)
 
 **Important paper** [DNA damage is a major cause of sequencing errors, directly confounding variant identification](http://biorxiv.org/content/early/2016/08/19/070334)
 
