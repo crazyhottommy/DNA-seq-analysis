@@ -100,7 +100,9 @@ A database of Deleterious Synonymous Mutation, a continually updated database th
 
 * [Standard operating procedure for somatic variant refinement of tumor sequencing data](https://www.biorxiv.org/content/early/2018/02/21/266262) 
 
-* [Variant Review with the Integrative Genomics Viewer(https://www.ncbi.nlm.nih.gov/pubmed/29092934)
+* [Variant Review with the Integrative Genomics Viewer](https://www.ncbi.nlm.nih.gov/pubmed/29092934)
+
+* [Skyhawk: An Artificial Neural Network-based discriminator for reviewing clinically significant genomic variant](https://www.biorxiv.org/content/early/2018/05/01/311985)
 
 ### Third generation sequencing for Structural variants (works on short reads as well!)
 * [beautiful “Ribbon” viewer to visualize complicated SVs revealed by PacBio reads](http://genomeribbon.com/) [github page](https://github.com/MariaNattestad/ribbon)
