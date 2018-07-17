@@ -60,6 +60,10 @@ Also read [The UCSC Genome Browser Coordinate Counting Systems](http://genome.uc
 * [NGS-DNASeq_GATK-session.pdf](https://github.com/crazyhottommy/DNA-seq-analysis/files/94758/NGS-DNASeq_GATK-session.pdf)  
 * [GATK pipeline](https://github.com/crazyhottommy/GATK-pipeline)  
 * [An ensemble approach to accurately detect somatic mutations using SomaticSeq](http://www.genomebiology.com/2015/16/1/197#B14) [tool github page](https://github.com/bioinform/somaticseq/)
+* [A synthetic-diploid benchmark for accurate variant-calling evaluation](https://www.nature.com/articles/s41588-018-0165-1) A benchmark dataset from Heng Li. [github repo](https://github.com/lh3/CHM-eval)
+* [Strelka2: fast and accurate calling of germline and somatic variants](https://github.com/Illumina/strelka) paper: https://www.nature.com/articles/s41592-018-0051-x
+* [lancet](https://github.com/nygenome/lancet) is a somatic variant caller (SNVs and indels) for short read data. Lancet uses a localized micro-assembly strategy to detect somatic mutation with high sensitivity and accuracy on a tumor/normal pair. paper: https://www.nature.com/articles/s42003-018-0023-9
+
 * [lumpy](https://github.com/arq5x/lumpy-sv)
 * [wham](https://github.com/zeeev/wham)
 * [SV-Bay](https://github.com/InstitutCurie/SV-Bay )  
