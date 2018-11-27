@@ -130,3 +130,4 @@ if not config["from_fastq"]:
                 """
 
 ```
+A new tool [bazam](https://github.com/ssadedin/bazam) A read extraction and realignment tool for next generation sequencing data. Take a look!
