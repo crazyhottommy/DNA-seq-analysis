@@ -53,6 +53,12 @@ Also, read this [post](https://standage.github.io/on-genomic-interval-notation.h
 
 Also read [The UCSC Genome Browser Coordinate Counting Systems](http://genome.ucsc.edu/blog/the-ucsc-genome-browser-coordinate-counting-systems/)
 
+### some useful tools for preprocessing
+
+* [FastqPuri](https://github.com/jengelmann/FastqPuri) fastq quality assessment and filtering tool.
+* [fastp](https://github.com/OpenGene/fastp) A tool designed to provide fast all-in-one preprocessing for FastQ files. This tool is developed in C++ with multithreading supported to afford high performance. really promising, take a look!
+* A new tool [bazam](https://github.com/ssadedin/bazam) A read extraction and realignment tool for next generation sequencing data. Take a look!
+
 ### Mutation caller, structural variant caller
 
 * [sample-swap checking directly on BAMs/CRAMs for cancer data](https://github.com/brentp/somalier)
