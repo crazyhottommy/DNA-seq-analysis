@@ -63,6 +63,7 @@ Also read [The UCSC Genome Browser Coordinate Counting Systems](http://genome.uc
 
 * [sample-swap checking directly on BAMs/CRAMs for cancer data](https://github.com/brentp/somalier)
 * paper [Making the difference: integrating structural variation detection tools](http://bib.oxfordjournals.org/content/16/5/852.short?rss=1&utm_source=twitterfeed&utm_medium=twitter)
+* [Mapping and characterization of structural variation in 17,795 deeply sequenced human genomes](https://www.biorxiv.org/content/early/2018/12/31/508515)
 * [GATK HaplotypeCaller Analysis of BWA (mem) mapped Illumina reads](http://wiki.bits.vib.be/index.php/GATK_HaplotypeCaller_Analysis_of_BWA_(mem)_mapped_Illumina_reads)
 * [NGS-DNASeq_GATK-session.pdf](https://github.com/crazyhottommy/DNA-seq-analysis/files/94758/NGS-DNASeq_GATK-session.pdf)  
 * [GATK pipeline](https://github.com/crazyhottommy/GATK-pipeline)  
