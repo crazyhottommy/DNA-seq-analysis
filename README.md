@@ -53,6 +53,22 @@ Also, read this [post](https://standage.github.io/on-genomic-interval-notation.h
 
 Also read [The UCSC Genome Browser Coordinate Counting Systems](http://genome.ucsc.edu/blog/the-ucsc-genome-browser-coordinate-counting-systems/)
 
+* [Which human reference genome to use?](https://lh3.github.io/2017/11/13/which-human-reference-genome-to-use) by Heng Li
+
+TL;DR: If you map reads to GRCh37 or hg19, use hs37-1kg:
+
+ftp://ftp-trace.ncbi.nih.gov/1000genomes/ftp/technical/reference/human_g1k_v37.fasta.gz
+If you map to GRCh37 and believe decoy sequences help with better variant calling, use hs37d5:
+
+ftp://ftp-trace.ncbi.nih.gov/1000genomes/ftp/technical/reference/phase2_reference_assembly_sequence/hs37d5.fa.gz
+If you map reads to GRCh38 or hg38, use the following:
+
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.15_GRCh38/seqs_for_alignment_pipelines.ucsc_ids/GCA_000001405.15_GRCh38_no_alt_analysis_set.fna.gz
+
+* [Reference Genome Components](https://software.broadinstitute.org/gatk/documentation/article?id=7857) by GATK team.
+
+* [Human genome reference builds - GRCh38/hg38 - b37 - hg19](https://software.broadinstitute.org/gatk/documentation/article?id=11010) by GATK team.
+
 ### some useful tools for preprocessing
 
 * [FastqPuri](https://github.com/jengelmann/FastqPuri) fastq quality assessment and filtering tool.
@@ -71,6 +87,8 @@ Also read [The UCSC Genome Browser Coordinate Counting Systems](http://genome.uc
 * [A synthetic-diploid benchmark for accurate variant-calling evaluation](https://www.nature.com/articles/s41588-018-0165-1) A benchmark dataset from Heng Li. [github repo](https://github.com/lh3/CHM-eval)
 * [Strelka2: fast and accurate calling of germline and somatic variants](https://github.com/Illumina/strelka) paper: https://www.nature.com/articles/s41592-018-0051-x
 * [lancet](https://github.com/nygenome/lancet) is a somatic variant caller (SNVs and indels) for short read data. Lancet uses a localized micro-assembly strategy to detect somatic mutation with high sensitivity and accuracy on a tumor/normal pair. paper: https://www.nature.com/articles/s42003-018-0023-9
+*  [needlestack](https://github.com/IARCbioinfo/needlestack) an ultra-sensitive variant caller for multi-sample next
+generation sequencing data. This tool seems to be very useful for multi-region tumor sample analysis. [paper](https://www.biorxiv.org/content/biorxiv/early/2019/05/21/639377.full.pdf)
 
 * [lumpy](https://github.com/arq5x/lumpy-sv)
 * [wham](https://github.com/zeeev/wham)
