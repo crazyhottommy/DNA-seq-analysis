@@ -74,6 +74,7 @@ ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.15_GRCh38/s
 * [FastqPuri](https://github.com/jengelmann/FastqPuri) fastq quality assessment and filtering tool.
 * [fastp](https://github.com/OpenGene/fastp) A tool designed to provide fast all-in-one preprocessing for FastQ files. This tool is developed in C++ with multithreading supported to afford high performance. really promising, take a look!
 * A new tool [bazam](https://github.com/ssadedin/bazam) A read extraction and realignment tool for next generation sequencing data. Take a look!
+* [bwa-mem2](https://github.com/bwa-mem2/bwa-mem2) exact the same results of bwa-mem, 80% faster!
 
 ### check sample swapping
 
