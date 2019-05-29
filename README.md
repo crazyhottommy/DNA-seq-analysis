@@ -75,6 +75,10 @@ ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.15_GRCh38/s
 * [fastp](https://github.com/OpenGene/fastp) A tool designed to provide fast all-in-one preprocessing for FastQ files. This tool is developed in C++ with multithreading supported to afford high performance. really promising, take a look!
 * A new tool [bazam](https://github.com/ssadedin/bazam) A read extraction and realignment tool for next generation sequencing data. Take a look!
 
+### check sample swapping
+
+* [somalier](https://github.com/brentp/somalier) sample-swap checking directly on BAMs/CRAMs for cancer data
+
 ### Mutation caller, structural variant caller
 
 * [sample-swap checking directly on BAMs/CRAMs for cancer data](https://github.com/brentp/somalier)
