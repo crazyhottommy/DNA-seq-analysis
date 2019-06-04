@@ -103,7 +103,9 @@ generation sequencing data. This tool seems to be very useful for multi-region t
 >Delly is the best sv caller in the DREAM challenge
 https://www.synapse.org/#!Synapse:syn312572/wiki/70726
 
-*[SV caller benchmark](http://shiny.wehi.edu.au/cameron.d/sv_benchmark)*
+* [SV caller benchmark](http://shiny.wehi.edu.au/cameron.d/sv_benchmark)*
+* [Comprehensive evaluation of structural variation detection algorithms for whole genome sequencing](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1720-5)
+* [SVAFotate](https://github.com/fakedrtom/SVAFotate) Annotate a (lumpy) structual variant (SV) VCF with allele frequencies (AFs) from large population SV cohorts (currently CCDG and/or gnomAD) with a simple command line tool.
 
 * [COSMOS](http://seselab.org/cosmos/): Somatic Large Structural Variation Detector
 * Fusion And Chromosomal Translocation Enumeration and Recovery Algorithm [(FACTERA)](https://factera.stanford.edu/)  
