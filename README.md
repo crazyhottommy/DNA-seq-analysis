@@ -106,6 +106,7 @@ https://www.synapse.org/#!Synapse:syn312572/wiki/70726
 * [SV caller benchmark](http://shiny.wehi.edu.au/cameron.d/sv_benchmark)*
 * [Comprehensive evaluation of structural variation detection algorithms for whole genome sequencing](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1720-5)
 * [SVAFotate](https://github.com/fakedrtom/SVAFotate) Annotate a (lumpy) structual variant (SV) VCF with allele frequencies (AFs) from large population SV cohorts (currently CCDG and/or gnomAD) with a simple command line tool.
+* [Comprehensively benchmarking applications for detecting copy number variation](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007069) Our results show that the sequencing depth can strongly affect CNV detection. Among the ten applications benchmarked, LUMPY performs best for both high sensitivity and specificity for each sequencing depth.
 
 * [COSMOS](http://seselab.org/cosmos/): Somatic Large Structural Variation Detector
 * Fusion And Chromosomal Translocation Enumeration and Recovery Algorithm [(FACTERA)](https://factera.stanford.edu/)  
