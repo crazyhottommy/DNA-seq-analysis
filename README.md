@@ -177,6 +177,7 @@ A database of Deleterious Synonymous Mutation, a continually updated database th
 * [bioconductor copy number work flow](https://www.bioconductor.org/help/course-materials/2014/SeattleOct2014/B02.2.3_CopyNumber.html)
 * [paper: Assessing the reproducibility of exome copy number variations predictions](http://www.ncbi.nlm.nih.gov/pubmed/27503473?dopt=Abstract&utm_source=dlvr.it&utm_medium=twitter)
 * [CNVkit](https://github.com/etal/cnvkit) A command-line toolkit and Python library for detecting copy number variants and alterations genome-wide from targeted DNA sequencing.
+* [SavvyCNV: genome-wide CNV calling from off-target reads](https://www.biorxiv.org/content/10.1101/617605v2)
 
 ### Tools for visulization 
 1. [New app gene.iobio](http://iobio.io/)  
