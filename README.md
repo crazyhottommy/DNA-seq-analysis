@@ -206,6 +206,7 @@ A database of Deleterious Synonymous Mutation, a continually updated database th
 * [signeR](http://bioconductor.org/packages/release/bioc/html/signeR.html)
 * [deconstructSigs](https://github.com/raerose01/deconstructSigs)
 * [MutationalPatterns](https://github.com/CuppenResearch/MutationalPatterns)
+* [sigminer](https://github.com/ShixiangWang/sigminer/tree/devel): an easy-to-use and scalable toolkit for genomic alteration signature analysis and visualization in R
 
 ### Tools for MAF files
 TCGA has all the variants calls in MAF format. Please read a [post](https://www.biostars.org/p/69222/) by Cyriac Kandoth. 
@@ -213,7 +214,7 @@ TCGA has all the variants calls in MAF format. Please read a [post](https://www.
 1. [convert vcf to MAF](https://github.com/mskcc/vcf2maf): perl script by Cyriac Kandoth.
 2. once converted to MAF, one can use this [MAFtools](https://github.com/PoisonAlien/maftools) to do visualization: oncoprint wraps complexHeatmap, Lollipop and Mutational Signatures etc. Very cool, I just found it...
 3. [MutationalPatterns](https://github.com/CuppenResearch/MutationalPatterns): an integrative R package for studying patterns in base substitution catalogues
-4. [sigminer](https://github.com/ShixiangWang/sigminer/tree/devel): an easy-to-use and scalable toolkit for genomic alteration signature analysis and visualization in R
+
 
 ### Tools for bam files
 
