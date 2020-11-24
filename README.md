@@ -69,6 +69,13 @@ ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.15_GRCh38/s
 
 * [Human genome reference builds - GRCh38/hg38 - b37 - hg19](https://software.broadinstitute.org/gatk/documentation/article?id=11010) by GATK team.
 
+
+### get the reference files and mapping index programmatically
+
+* [Go Get Data](https://gogetdata.github.io/quick-start.html#searching-for-data-packages) from Aaron's lab.
+* [Refgenie: a reference genome resource manager](http://refgenie.databio.org/en/latest/)
+* [genomepy](https://github.com/vanheeringen-lab/genomepy)
+
 ### some useful tools for preprocessing
 
 * [FastqPuri](https://github.com/jengelmann/FastqPuri) fastq quality assessment and filtering tool.
