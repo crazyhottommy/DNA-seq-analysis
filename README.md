@@ -117,6 +117,8 @@ https://www.synapse.org/#!Synapse:syn312572/wiki/70726
 * [Genotyping structural variants in pangenome graphs using the vg toolkit (https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-1949-z)
 * [SVAFotate](https://github.com/fakedrtom/SVAFotate) Annotate a (lumpy) structual variant (SV) VCF with allele frequencies (AFs) from large population SV cohorts (currently CCDG and/or gnomAD) with a simple command line tool.
 * [Comprehensively benchmarking applications for detecting copy number variation](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007069) Our results show that the sequencing depth can strongly affect CNV detection. Among the ten applications benchmarked, LUMPY performs best for both high sensitivity and specificity for each sequencing depth. 
+* [minigraph](https://github.com/lh3/minigraph#callsv) from Heng Li to call complex SVs.
+* [Parliament2](https://github.com/slzarate/parliament2): Accurate structural variant calling at scale. by Fritz group in BCM. https://academic.oup.com/gigascience/article/9/12/giaa145/6042728
 
 
 * Bent Perderson works on [smoove](https://github.com/brentp/smoove) which improves upon lumpy.
