@@ -102,6 +102,7 @@ ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.15_GRCh38/s
 *  [needlestack](https://github.com/IARCbioinfo/needlestack) an ultra-sensitive variant caller for multi-sample next
 generation sequencing data. This tool seems to be very useful for multi-region tumor sample analysis. [paper](https://www.biorxiv.org/content/biorxiv/early/2019/05/21/639377.full.pdf)
 
+* [PerSVade: personalized structural variant detection in any species of interest](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-022-02737-4)
 * [lumpy](https://github.com/arq5x/lumpy-sv)
 * [wham](https://github.com/zeeev/wham)
 * [SV-Bay](https://github.com/InstitutCurie/SV-Bay )  
