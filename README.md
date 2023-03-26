@@ -89,6 +89,7 @@ ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.15_GRCh38/s
 
 ### Mutation caller, structural variant caller
 
+* [Sarek, a nextflow pipeline for variant calling](https://github.com/nf-core/sarek)
 * [sample-swap checking directly on BAMs/CRAMs for cancer data](https://github.com/brentp/somalier)
 * paper [Making the difference: integrating structural variation detection tools](http://bib.oxfordjournals.org/content/16/5/852.short?rss=1&utm_source=twitterfeed&utm_medium=twitter)
 * [Mapping and characterization of structural variation in 17,795 deeply sequenced human genomes](https://www.biorxiv.org/content/early/2018/12/31/508515)
